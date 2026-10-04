@@ -67,12 +67,10 @@ function Hero() {
       if (cancelled) return;
       ctx = gsap.context(() => {
         const tl = gsap.timeline({ defaults: { ease: "expo.out" } });
-        tl.fromTo("[data-h-grid]", { opacity: 0 }, { opacity: 1, duration: 0.6 })
-          .fromTo("[data-h-label]", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.5 }, 0.1)
+        tl.fromTo("[data-h-label]", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.5 }, 0.1)
           .fromTo("[data-h-line]", { yPercent: 110 }, { yPercent: 0, duration: 1, stagger: 0.07 }, 0.2)
           .fromTo("[data-h-panel]", { opacity: 0, y: 22 }, { opacity: 1, y: 0, duration: 0.8, stagger: 0.08 }, 0.35)
           .fromTo("[data-h-img]", { clipPath: "inset(0 0 100% 0)" }, { clipPath: "inset(0 0 0% 0)", duration: 1.1, ease: "expo.inOut" }, 0.35)
-          .fromTo("[data-h-meta]", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.6, stagger: 0.06 }, 0.6)
           .fromTo("[data-h-cta]", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.6, stagger: 0.06 }, 0.8);
         gsap.to("[data-h-img] img", { yPercent: 6, ease: "none", scrollTrigger: { trigger: el, start: "top top", end: "bottom top", scrub: true } });
       }, el);
@@ -83,14 +81,12 @@ function Hero() {
   return (
     <section ref={root} className="shell pb-4 pt-20 md:pb-8 md:pt-28">
       <div className="relative isolate h-[calc(100svh-5.75rem)] min-h-[650px] max-h-[780px] overflow-hidden rounded-[24px] border bg-ink text-ink-foreground shadow-sm md:h-[760px] md:bg-card md:text-foreground lg:aspect-[16/9] lg:h-auto lg:max-h-[820px] lg:min-h-[660px]">
-        <div data-h-grid className="pointer-events-none absolute inset-0" aria-hidden />
-
         <div className="relative z-10 grid gap-5 px-5 pt-7 md:gap-6 md:px-8 md:pt-14 lg:grid-cols-12 lg:px-10 lg:pt-16">
           <div className="lg:col-span-7">
             <p data-h-label className="label flex items-center gap-3 text-ink-muted md:text-muted-foreground">
               <span className="h-2 w-2 rounded-full bg-signal" /> Bhopal, Madhya Pradesh — Est. {company.established}
             </p>
-            <h1 className="mt-7 font-display text-[clamp(2.65rem,13vw,3.7rem)] font-bold uppercase leading-[0.84] md:mt-9 md:text-[8.2vw] md:font-medium lg:text-[5.25vw]">
+            <h1 className="mt-7 font-display text-[clamp(2.25rem,10.8vw,2.7rem)] font-bold uppercase leading-[0.86] md:mt-9 md:text-[8.2vw] md:font-medium lg:text-[5.25vw]">
               {["Engineering", "the electric", "road ahead"].map((line, index) => (
                 <span key={line} className="block overflow-hidden"><span data-h-line className={cn("block", index === 2 && "relative inline-block after:absolute after:-right-5 after:top-2 after:h-3 after:w-3 after:rounded-full after:bg-signal md:after:h-4 md:after:w-4")}>{line}</span></span>
               ))}
@@ -105,9 +101,9 @@ function Hero() {
                   <span key={item} className={cn("rounded-full px-3 py-2 text-xs", index === 1 ? "bg-signal text-accent-foreground" : "bg-ink-foreground/10 text-ink-foreground md:bg-secondary md:text-foreground")}>{item}</span>
                 ))}
               </div>
-              <div className="mt-6 grid grid-cols-[minmax(0,1fr)_7rem] items-end gap-4 md:mt-7 md:grid-cols-[minmax(0,1fr)_8rem] md:gap-5">
+              <div className="mt-5 grid grid-cols-[minmax(0,1fr)_6rem] items-end gap-3 md:mt-7 md:grid-cols-[minmax(0,1fr)_8rem] md:gap-5">
                 <div className="min-w-0">
-                  <p className="font-display text-xl font-semibold leading-tight md:text-3xl">High-performance components for electric mobility.</p>
+                  <p className="font-display text-lg font-semibold leading-tight md:text-3xl">High-performance components for electric mobility.</p>
                   <p className="mt-4 hidden text-sm leading-relaxed text-muted-foreground md:block">Motors, controllers and EV conversion systems engineered for real-world use.</p>
                 </div>
                 <div className="aspect-square overflow-hidden rounded-xl bg-ink-foreground/5 md:bg-transparent">
@@ -119,7 +115,7 @@ function Hero() {
         </div>
 
         <div className="absolute inset-x-0 bottom-0 h-[210px] bg-signal md:h-[290px] lg:h-[38%]" />
-        <div data-h-img className="absolute bottom-10 left-1/2 z-20 h-[210px] w-[88vw] -translate-x-1/2 md:bottom-0 md:h-[310px] md:w-[72vw] lg:h-[48%] lg:w-[60vw]">
+        <div data-h-img className="absolute bottom-10 left-1/2 z-20 h-[205px] w-[84vw] -translate-x-1/2 md:bottom-0 md:h-[310px] md:w-[72vw] lg:h-[48%] lg:w-[60vw]">
           <img src={heroImg} alt="45kW Liquid Cooled Motor and Controller" fetchPriority="high" className="h-full w-full scale-110 object-contain object-bottom mix-blend-multiply drop-shadow-xl md:scale-125 lg:scale-110" />
         </div>
 
