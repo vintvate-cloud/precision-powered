@@ -33,7 +33,7 @@ export function SmoothScroll() {
   return null;
 }
 
-type RevealProps = { children: ReactNode; className?: string; as?: "div" | "section"; kind?: "up" | "mask" | "image"; delay?: number };
+type RevealProps = { children: ReactNode; className?: string | undefined; as?: "div" | "section"; kind?: "up" | "mask" | "image"; delay?: number };
 
 /** Scroll-triggered reveal. Content is visible without JS. */
 export function Reveal({ children, className, kind = "up", delay = 0 }: RevealProps) {

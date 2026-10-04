@@ -142,7 +142,8 @@ export const clients = [
   ["KRISHIGATI", "KRISHIGATI.png"], ["Gurunanak", "GURUNANAK.png"], ["EDGO Carts", "EDGO-Carts.png"], ["AK Auto Agency", "AK-AUto-Agency.png"],
 ].map(([name, file]) => ({ name, logo: L + file }));
 
-export const contact = {
+type Phone = { label: string; display: string; tel: string };
+export const contact: { phones: [Phone, Phone]; email: string; registeredOffice: string; plant: string; social: { label: string; href: string }[] } = {
   phones: [
     { label: "Ordering", display: "+91-9229110501", tel: "+919229110501" },
     { label: "Sales & Marketing", display: "+91-6376224631", tel: "+916376224631" },

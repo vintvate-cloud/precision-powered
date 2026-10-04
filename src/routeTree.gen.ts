@@ -15,6 +15,7 @@ import { Route as ContactUsRouteImport } from './routes/contact-us'
 import { Route as ShopRouteImport } from './routes/shop'
 import { Route as ProductCategorySlugRouteImport } from './routes/product-category.$slug'
 import { Route as ProductSlugRouteImport } from './routes/product.$slug'
+import { Route as ShopengineTemplateIdRouteImport } from './routes/shopengine-template.$id'
 import { Route as ProductCategoryMaterialHandlingSolutionsSubRouteImport } from './routes/product-category.material-handling-solutions.$sub'
 
 const IndexRoute = IndexRouteImport.update({
@@ -47,6 +48,11 @@ const ProductSlugRoute = ProductSlugRouteImport.update({
   path: '/product/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ShopengineTemplateIdRoute = ShopengineTemplateIdRouteImport.update({
+  id: '/shopengine-template/$id',
+  path: '/shopengine-template/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProductCategoryMaterialHandlingSolutionsSubRoute =
   ProductCategoryMaterialHandlingSolutionsSubRouteImport.update({
     id: '/product-category/material-handling-solutions/$sub',
@@ -61,6 +67,7 @@ export interface FileRoutesByFullPath {
   '/shop': typeof ShopRoute
   '/product-category/$slug': typeof ProductCategorySlugRoute
   '/product/$slug': typeof ProductSlugRoute
+  '/shopengine-template/$id': typeof ShopengineTemplateIdRoute
   '/product-category/material-handling-solutions/$sub': typeof ProductCategoryMaterialHandlingSolutionsSubRoute
 }
 export interface FileRoutesByTo {
@@ -70,6 +77,7 @@ export interface FileRoutesByTo {
   '/shop': typeof ShopRoute
   '/product-category/$slug': typeof ProductCategorySlugRoute
   '/product/$slug': typeof ProductSlugRoute
+  '/shopengine-template/$id': typeof ShopengineTemplateIdRoute
   '/product-category/material-handling-solutions/$sub': typeof ProductCategoryMaterialHandlingSolutionsSubRoute
 }
 export interface FileRoutesById {
@@ -80,6 +88,7 @@ export interface FileRoutesById {
   '/shop': typeof ShopRoute
   '/product-category/$slug': typeof ProductCategorySlugRoute
   '/product/$slug': typeof ProductSlugRoute
+  '/shopengine-template/$id': typeof ShopengineTemplateIdRoute
   '/product-category/material-handling-solutions/$sub': typeof ProductCategoryMaterialHandlingSolutionsSubRoute
 }
 export interface FileRouteTypes {
@@ -91,6 +100,7 @@ export interface FileRouteTypes {
     | '/shop'
     | '/product-category/$slug'
     | '/product/$slug'
+    | '/shopengine-template/$id'
     | '/product-category/material-handling-solutions/$sub'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -100,6 +110,7 @@ export interface FileRouteTypes {
     | '/shop'
     | '/product-category/$slug'
     | '/product/$slug'
+    | '/shopengine-template/$id'
     | '/product-category/material-handling-solutions/$sub'
   id:
     | '__root__'
@@ -109,6 +120,7 @@ export interface FileRouteTypes {
     | '/shop'
     | '/product-category/$slug'
     | '/product/$slug'
+    | '/shopengine-template/$id'
     | '/product-category/material-handling-solutions/$sub'
   fileRoutesById: FileRoutesById
 }
@@ -119,6 +131,7 @@ export interface RootRouteChildren {
   ShopRoute: typeof ShopRoute
   ProductCategorySlugRoute: typeof ProductCategorySlugRoute
   ProductSlugRoute: typeof ProductSlugRoute
+  ShopengineTemplateIdRoute: typeof ShopengineTemplateIdRoute
   ProductCategoryMaterialHandlingSolutionsSubRoute: typeof ProductCategoryMaterialHandlingSolutionsSubRoute
 }
 
@@ -166,6 +179,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProductSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/shopengine-template/$id': {
+      id: '/shopengine-template/$id'
+      path: '/shopengine-template/$id'
+      fullPath: '/shopengine-template/$id'
+      preLoaderRoute: typeof ShopengineTemplateIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/product-category/material-handling-solutions/$sub': {
       id: '/product-category/material-handling-solutions/$sub'
       path: '/product-category/material-handling-solutions/$sub'
@@ -183,6 +203,7 @@ const rootRouteChildren: RootRouteChildren = {
   ShopRoute: ShopRoute,
   ProductCategorySlugRoute: ProductCategorySlugRoute,
   ProductSlugRoute: ProductSlugRoute,
+  ShopengineTemplateIdRoute: ShopengineTemplateIdRoute,
   ProductCategoryMaterialHandlingSolutionsSubRoute:
     ProductCategoryMaterialHandlingSolutionsSubRoute,
 }

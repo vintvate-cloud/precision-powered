@@ -209,7 +209,7 @@ function CategoryIndex() {
               {list.map((c, i) => (
                 <img key={c.slug} src={categoryImage(c)} alt="" loading="lazy" className={cn("absolute inset-0 h-full w-full object-contain p-10 mix-blend-multiply transition-all duration-700", active === i ? "scale-100 opacity-100" : "scale-105 opacity-0")} />
               ))}
-              <span className="label absolute bottom-5 left-5 text-muted-foreground">{list[active].name}</span>
+              <span className="label absolute bottom-5 left-5 text-muted-foreground">{list[active]?.name}</span>
             </div>
           </div>
         </div>
@@ -387,7 +387,7 @@ function Founder() {
 
 function Voices() {
   const [i, setI] = useState(0);
-  const t = testimonials[i];
+  const t = testimonials[i]!;
   return (
     <section className="border-t bg-card">
       <div className="shell grid-12 gap-y-10 py-24 md:py-32">

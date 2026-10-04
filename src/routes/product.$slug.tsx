@@ -44,7 +44,7 @@ function ProductPage() {
   const specs = trending.find((t) => t.slug === p.slug)?.specs;
   const related = products.filter((x) => x.category === p.category && x.slug !== p.slug).slice(0, 4);
   const idx = products.findIndex((x) => x.slug === p.slug);
-  const next = products[(idx + 1) % products.length];
+  const next = products[(idx + 1) % products.length]!;
 
   return (
     <div key={p.slug}>
