@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { categories, company, contact } from "@/data/site";
 import { ButtonLink } from "./Button";
+import { SocialPreviewLink } from "./SocialPreviewLink";
 
 export function Footer() {
   return (
@@ -63,7 +64,7 @@ export function Footer() {
           <p className="label text-ink-muted">© 2026 Motomanic — All rights reserved.</p>
           <div className="flex gap-6">
             {contact.social.map((s) => (
-              <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="label link-line text-ink-muted hover:text-ink-foreground">{s.label}</a>
+              <SocialPreviewLink key={s.label} {...s} theme="dark" />
             ))}
           </div>
         </div>

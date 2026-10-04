@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { contact } from "@/data/site";
 import { InquiryForm } from "@/components/site/InquiryForm";
 import { DrawLine, MaskLines, Reveal } from "@/components/site/motion";
+import { SocialPreviewLink } from "@/components/site/SocialPreviewLink";
 
 export const Route = createFileRoute("/contact-us")({
   head: () => ({
@@ -49,7 +50,7 @@ function Contact() {
           </dl>
           <DrawLine className="text-foreground/20" />
           <div className="mt-8 flex gap-6">
-            {contact.social.map((s) => <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="label link-line">{s.label}</a>)}
+            {contact.social.map((s) => <SocialPreviewLink key={s.label} {...s} />)}
           </div>
         </div>
 
