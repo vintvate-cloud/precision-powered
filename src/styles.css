@@ -97,10 +97,13 @@
 .animate-marquee { animation: marquee 40s linear infinite; }
 @keyframes scroll-dot { 0% { transform: translateY(0); opacity: 0; } 20% { opacity: 1; } 100% { transform: translateY(56px); opacity: 0; } }
 .animate-scroll-dot { animation: scroll-dot 1.8s cubic-bezier(0.6, 0, 0.3, 1) infinite; }
+@keyframes testimonial-progress { from { width: 0%; } to { width: 100%; } }
+.testimonial-progress { animation: testimonial-progress 5.2s linear forwards; }
 
 html.lenis, html.lenis body { height: auto; }
 .lenis.lenis-smooth { scroll-behavior: auto !important; }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-marquee, .animate-scroll-dot { animation: none; }
+  .animate-marquee, .animate-scroll-dot, .testimonial-progress { animation: none; }
+  .testimonial-progress { width: 100%; }
 }

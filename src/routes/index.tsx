@@ -1,8 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
-import { categories, categoryImage, chapters, clients, company, founder, products, productsIn, testimonials, trending } from "@/data/site";
+import { categories, categoryImage, chapters, clients, company, founder, products, productsIn, trending } from "@/data/site";
 import { ButtonLink } from "@/components/site/Button";
 import { DrawLine, loadGsap, MaskLines, prefersReduced, Reveal } from "@/components/site/motion";
+import { TestimonialsCarousel } from "@/components/site/TestimonialsCarousel";
 import { cn } from "@/lib/utils";
 
 const heroImg = "https://motomanicev.com/wp-content/uploads/2025/10/45Kw-Liquid-Cooled-Motor-and-Controller-1024x576.png";
@@ -49,7 +50,7 @@ function Home() {
       <Story />
       <TrendingTrack />
       <Founder />
-      <Voices />
+      <TestimonialsCarousel />
       <Clients />
     </>
   );
@@ -391,35 +392,6 @@ function Founder() {
             <p className="label mt-2 text-muted-foreground">{founder.role}</p>
           </div>
         </div>
-      </div>
-    </section>
-  );
-}
-
-function Voices() {
-  const [i, setI] = useState(0);
-  const t = testimonials[i]!;
-  return (
-    <section className="border-t bg-card">
-      <div className="shell grid-12 gap-y-10 py-24 md:py-32">
-        <div className="col-span-4 md:col-span-2 lg:col-span-3">
-          <p className="label text-muted-foreground">(06) What our customers say</p>
-          <div className="mt-8 flex gap-2">
-            {testimonials.map((x, j) => (
-              <button key={x.name} onClick={() => setI(j)} aria-label={`Testimonial ${j + 1}`} className={cn("label border px-3 py-2 transition-colors", i === j ? "border-foreground bg-foreground text-background" : "hover:border-foreground")}>
-                {String(j + 1).padStart(2, "0")}
-              </button>
-            ))}
-          </div>
-        </div>
-        <figure key={i} className="col-span-4 md:col-span-6 lg:col-span-8 lg:col-start-5 animate-in fade-in slide-in-from-bottom-2 duration-700">
-          <blockquote className="font-display text-2xl font-medium leading-snug tracking-[-0.02em] md:text-4xl">“{t.quote}”</blockquote>
-          <figcaption className="mt-10 flex items-center gap-4 border-t pt-6">
-            <span className="h-2 w-2 bg-signal" />
-            <span className="font-semibold">{t.name}</span>
-            <span className="text-sm text-muted-foreground">{t.role}</span>
-          </figcaption>
-        </figure>
       </div>
     </section>
   );
