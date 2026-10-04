@@ -85,6 +85,8 @@ function Hero() {
             <img src={heroImg} alt="45kW Liquid Cooled Motor and Controller" fetchPriority="high" className="h-full w-full scale-110 object-contain p-6 mix-blend-multiply" />
             <span className="label absolute bottom-4 left-4 text-muted-foreground">Fig. 01 — 45kW Liquid Cooled Motor and Controller</span>
           </div>
+      </div>
+
       <div className="shell relative grid-12 min-h-[calc(100svh-5rem)] content-between gap-y-10 py-10">
         <div className="col-span-4 md:col-span-8 lg:col-span-12">
           <p data-h-label className="label flex items-center gap-3 text-muted-foreground">
