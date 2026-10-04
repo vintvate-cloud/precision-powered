@@ -232,22 +232,22 @@ function Story() {
     const el = root.current;
     if (!el || prefersReduced()) return;
     let ctx: { revert: () => void } | undefined;
+    let cancelled = false;
     loadGsap().then(({ gsap, ScrollTrigger }) => {
-      ctx = gsap.context(() => {
-        ScrollTrigger.matchMedia({
-          "(min-width: 1024px)": () => {
-            ScrollTrigger.create({
-              trigger: el,
-              start: "top top",
-              end: () => `+=${window.innerHeight * chapters.length * 0.8}`,
-              pin: "[data-pin]",
-              onUpdate: (s) => setStep(Math.min(chapters.length - 1, Math.floor(s.progress * chapters.length))),
-            });
-          },
+      if (cancelled) return;
+      const mm = gsap.matchMedia();
+      mm.add("(min-width: 1024px)", () => {
+        ScrollTrigger.create({
+          trigger: el,
+          start: "top top",
+          end: () => `+=${window.innerHeight * chapters.length * 0.8}`,
+          pin: el.querySelector<HTMLElement>("[data-pin]"),
+          onUpdate: (s) => setStep(Math.min(chapters.length - 1, Math.floor(s.progress * chapters.length))),
         });
-      }, el);
+      });
+      ctx = mm;
     });
-    return () => ctx?.revert();
+    return () => { cancelled = true; ctx?.revert(); };
   }, []);
 
   return (
@@ -309,27 +309,28 @@ function TrendingTrack() {
     const el = root.current, tr = track.current;
     if (!el || !tr || prefersReduced()) return;
     let ctx: { revert: () => void } | undefined;
-    loadGsap().then(({ gsap, ScrollTrigger }) => {
-      ctx = gsap.context(() => {
-        ScrollTrigger.matchMedia({
-          "(min-width: 1024px)": () => {
-            gsap.to(tr, {
-              x: () => -(tr.scrollWidth - window.innerWidth),
-              ease: "none",
-              scrollTrigger: {
-                trigger: el, start: "top top", end: () => `+=${tr.scrollWidth - window.innerWidth}`,
-                pin: true, scrub: 0.6, invalidateOnRefresh: true,
-                onUpdate: (s) => setIdx(Math.min(items.length - 1, Math.round(s.progress * (items.length - 1)))),
-              },
-            });
+    let cancelled = false;
+    loadGsap().then(({ gsap }) => {
+      if (cancelled) return;
+      const mm = gsap.matchMedia();
+      mm.add("(min-width: 1024px)", () => {
+        gsap.to(tr, {
+          x: () => -(tr.scrollWidth - window.innerWidth),
+          ease: "none",
+          scrollTrigger: {
+            trigger: el, start: "top top", end: () => `+=${tr.scrollWidth - window.innerWidth}`,
+            pin: true, scrub: 0.6, invalidateOnRefresh: true,
+            onUpdate: (s) => setIdx(Math.min(items.length - 1, Math.round(s.progress * (items.length - 1)))),
           },
         });
-      }, el);
+      });
+      ctx = mm;
     });
-    return () => ctx?.revert();
+    return () => { cancelled = true; ctx?.revert(); };
   }, [items.length]);
 
   return (
+    <div>
     <section ref={root} className="overflow-hidden border-b lg:h-screen">
       <div className="flex h-full flex-col">
         <div className="shell flex items-end justify-between pb-8 pt-24 lg:pt-28">
