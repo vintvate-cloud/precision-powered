@@ -85,7 +85,7 @@ function Hero() {
       <div data-h-img className="absolute right-14 top-[46%] hidden w-[38vw] -translate-y-1/2 lg:block">
           <div className="product-plate relative aspect-[16/10] overflow-hidden">
             <img src={heroImg} alt="45kW Liquid Cooled Motor and Controller" fetchPriority="high" className="h-full w-full scale-110 object-contain p-6 mix-blend-multiply" />
-            <span className="label absolute bottom-4 left-4 text-muted-foreground">Fig. 01 — 45kW Liquid Cooled Motor and Controller</span>
+            <span className="label absolute bottom-3 left-3 right-3 bg-background/85 px-2 py-1 text-muted-foreground backdrop-blur-sm sm:right-auto">Fig. 01 — 45kW Liquid Cooled Motor and Controller</span>
           </div>
       </div>
 
@@ -109,7 +109,7 @@ function Hero() {
         <div data-h-img className="col-span-4 md:col-span-6 md:col-start-3 lg:hidden">
           <div className="product-plate relative aspect-[16/10] overflow-hidden">
             <img src={heroImg} alt="45kW Liquid Cooled Motor and Controller" fetchPriority="high" className="h-full w-full scale-110 object-contain p-6 mix-blend-multiply" />
-            <span className="label absolute bottom-4 left-4 text-muted-foreground">Fig. 01 — 45kW Liquid Cooled Motor and Controller</span>
+            <span className="label absolute bottom-3 left-3 right-3 bg-background/85 px-2 py-1 text-muted-foreground backdrop-blur-sm sm:right-auto">Fig. 01 — 45kW Liquid Cooled Motor and Controller</span>
           </div>
         </div>
 
