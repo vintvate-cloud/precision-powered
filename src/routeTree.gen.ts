@@ -10,33 +10,116 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AllCategoriesRouteImport } from './routes/all-categories'
+import { Route as ContactUsRouteImport } from './routes/contact-us'
+import { Route as ShopRouteImport } from './routes/shop'
+import { Route as ProductCategorySlugRouteImport } from './routes/product-category.$slug'
+import { Route as ProductSlugRouteImport } from './routes/product.$slug'
+import { Route as ProductCategoryMaterialHandlingSolutionsSubRouteImport } from './routes/product-category.material-handling-solutions.$sub'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AllCategoriesRoute = AllCategoriesRouteImport.update({
+  id: '/all-categories',
+  path: '/all-categories',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactUsRoute = ContactUsRouteImport.update({
+  id: '/contact-us',
+  path: '/contact-us',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ShopRoute = ShopRouteImport.update({
+  id: '/shop',
+  path: '/shop',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductCategorySlugRoute = ProductCategorySlugRouteImport.update({
+  id: '/product-category/$slug',
+  path: '/product-category/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductSlugRoute = ProductSlugRouteImport.update({
+  id: '/product/$slug',
+  path: '/product/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductCategoryMaterialHandlingSolutionsSubRoute =
+  ProductCategoryMaterialHandlingSolutionsSubRouteImport.update({
+    id: '/product-category/material-handling-solutions/$sub',
+    path: '/product-category/material-handling-solutions/$sub',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/all-categories': typeof AllCategoriesRoute
+  '/contact-us': typeof ContactUsRoute
+  '/shop': typeof ShopRoute
+  '/product-category/$slug': typeof ProductCategorySlugRoute
+  '/product/$slug': typeof ProductSlugRoute
+  '/product-category/material-handling-solutions/$sub': typeof ProductCategoryMaterialHandlingSolutionsSubRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/all-categories': typeof AllCategoriesRoute
+  '/contact-us': typeof ContactUsRoute
+  '/shop': typeof ShopRoute
+  '/product-category/$slug': typeof ProductCategorySlugRoute
+  '/product/$slug': typeof ProductSlugRoute
+  '/product-category/material-handling-solutions/$sub': typeof ProductCategoryMaterialHandlingSolutionsSubRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/all-categories': typeof AllCategoriesRoute
+  '/contact-us': typeof ContactUsRoute
+  '/shop': typeof ShopRoute
+  '/product-category/$slug': typeof ProductCategorySlugRoute
+  '/product/$slug': typeof ProductSlugRoute
+  '/product-category/material-handling-solutions/$sub': typeof ProductCategoryMaterialHandlingSolutionsSubRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/all-categories'
+    | '/contact-us'
+    | '/shop'
+    | '/product-category/$slug'
+    | '/product/$slug'
+    | '/product-category/material-handling-solutions/$sub'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/all-categories'
+    | '/contact-us'
+    | '/shop'
+    | '/product-category/$slug'
+    | '/product/$slug'
+    | '/product-category/material-handling-solutions/$sub'
+  id:
+    | '__root__'
+    | '/'
+    | '/all-categories'
+    | '/contact-us'
+    | '/shop'
+    | '/product-category/$slug'
+    | '/product/$slug'
+    | '/product-category/material-handling-solutions/$sub'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AllCategoriesRoute: typeof AllCategoriesRoute
+  ContactUsRoute: typeof ContactUsRoute
+  ShopRoute: typeof ShopRoute
+  ProductCategorySlugRoute: typeof ProductCategorySlugRoute
+  ProductSlugRoute: typeof ProductSlugRoute
+  ProductCategoryMaterialHandlingSolutionsSubRoute: typeof ProductCategoryMaterialHandlingSolutionsSubRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +131,60 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/all-categories': {
+      id: '/all-categories'
+      path: '/all-categories'
+      fullPath: '/all-categories'
+      preLoaderRoute: typeof AllCategoriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact-us': {
+      id: '/contact-us'
+      path: '/contact-us'
+      fullPath: '/contact-us'
+      preLoaderRoute: typeof ContactUsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/shop': {
+      id: '/shop'
+      path: '/shop'
+      fullPath: '/shop'
+      preLoaderRoute: typeof ShopRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/product-category/$slug': {
+      id: '/product-category/$slug'
+      path: '/product-category/$slug'
+      fullPath: '/product-category/$slug'
+      preLoaderRoute: typeof ProductCategorySlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/product/$slug': {
+      id: '/product/$slug'
+      path: '/product/$slug'
+      fullPath: '/product/$slug'
+      preLoaderRoute: typeof ProductSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/product-category/material-handling-solutions/$sub': {
+      id: '/product-category/material-handling-solutions/$sub'
+      path: '/product-category/material-handling-solutions/$sub'
+      fullPath: '/product-category/material-handling-solutions/$sub'
+      preLoaderRoute: typeof ProductCategoryMaterialHandlingSolutionsSubRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AllCategoriesRoute: AllCategoriesRoute,
+  ContactUsRoute: ContactUsRoute,
+  ShopRoute: ShopRoute,
+  ProductCategorySlugRoute: ProductCategorySlugRoute,
+  ProductSlugRoute: ProductSlugRoute,
+  ProductCategoryMaterialHandlingSolutionsSubRoute:
+    ProductCategoryMaterialHandlingSolutionsSubRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
