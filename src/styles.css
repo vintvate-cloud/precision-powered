@@ -90,23 +90,7 @@
     transition: background-size 0.45s cubic-bezier(0.7, 0, 0.2, 1);
   }
   .link-line:hover { background-size: 100% 1px; }
-  .eng-grid {
-    background-image:
-      linear-gradient(to right, var(--border) 1px, transparent 1px),
-      linear-gradient(to bottom, var(--border) 1px, transparent 1px);
-    background-size: calc(100% / 12) 120px;
-    opacity: 0.55;
-  }
-  .ink-grid {
-    background-image:
-      linear-gradient(to right, var(--ink-border) 1px, transparent 1px);
-    background-size: calc(100% / 12) 100%;
-  }
-  .product-plate { background: radial-gradient(120% 90% at 50% 40%, var(--card) 0%, var(--secondary) 100%); border-radius: var(--radius-lg); }
-  .reference-grid {
-    background-image: linear-gradient(to right, var(--border) 1px, transparent 1px);
-    background-size: calc(100% / 6) 100%;
-  }
+  .product-plate { border-radius: var(--radius-lg); }
 }
 
 @keyframes marquee { to { transform: translateX(-50%); } }
