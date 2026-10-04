@@ -42,7 +42,9 @@ export function Reveal({ children, className, kind = "up", delay = 0 }: RevealPr
     const el = ref.current;
     if (!el || prefersReduced()) return;
     let ctx: { revert: () => void } | undefined;
+    let cancelled = false;
     loadGsap().then(({ gsap }) => {
+      if (cancelled) return;
       ctx = gsap.context(() => {
         const st = { trigger: el, start: "top 88%", once: true };
         if (kind === "image") {
@@ -56,7 +58,7 @@ export function Reveal({ children, className, kind = "up", delay = 0 }: RevealPr
         }
       }, el);
     });
-    return () => ctx?.revert();
+    return () => { cancelled = true; ctx?.revert(); };
   }, [kind, delay]);
   return (
     <div ref={ref} className={cn(kind === "image" && "overflow-hidden", className)}>
@@ -85,13 +87,15 @@ export function DrawLine({ className, d = "M0 1 H1000" }: { className?: string; 
     const p = ref.current;
     if (!p || prefersReduced()) return;
     let ctx: { revert: () => void } | undefined;
+    let cancelled = false;
     loadGsap().then(({ gsap }) => {
+      if (cancelled) return;
       const len = p.getTotalLength();
       ctx = gsap.context(() => {
         gsap.fromTo(p, { strokeDasharray: len, strokeDashoffset: len }, { strokeDashoffset: 0, duration: 1.6, ease: "power2.inOut", scrollTrigger: { trigger: p, start: "top 92%", once: true } });
       });
     });
-    return () => ctx?.revert();
+    return () => { cancelled = true; ctx?.revert(); };
   }, []);
   return (
     <svg className={cn("h-px w-full overflow-visible", className)} viewBox="0 0 1000 2" preserveAspectRatio="none" aria-hidden>
