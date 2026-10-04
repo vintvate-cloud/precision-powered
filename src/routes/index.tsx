@@ -80,6 +80,11 @@ function Hero() {
   return (
     <section ref={root} className="relative min-h-[100svh] overflow-hidden pt-20">
       <div data-h-grid className="eng-grid pointer-events-none absolute inset-0" aria-hidden />
+      <div data-h-img className="absolute right-14 top-[46%] hidden w-[38vw] -translate-y-1/2 lg:block">
+          <div className="product-plate relative aspect-[16/10] overflow-hidden">
+            <img src={heroImg} alt="45kW Liquid Cooled Motor and Controller" fetchPriority="high" className="h-full w-full scale-110 object-contain p-6 mix-blend-multiply" />
+            <span className="label absolute bottom-4 left-4 text-muted-foreground">Fig. 01 — 45kW Liquid Cooled Motor and Controller</span>
+          </div>
       <div className="shell relative grid-12 min-h-[calc(100svh-5rem)] content-between gap-y-10 py-10">
         <div className="col-span-4 md:col-span-8 lg:col-span-12">
           <p data-h-label className="label flex items-center gap-3 text-muted-foreground">
@@ -97,7 +102,7 @@ function Hero() {
           </h1>
         </div>
 
-        <div data-h-img className="col-span-4 md:col-span-6 md:col-start-3 lg:col-[1/-1] lg:absolute lg:right-14 lg:top-[44%] lg:w-[38vw] lg:-translate-y-1/2">
+        <div data-h-img className="col-span-4 md:col-span-6 md:col-start-3 lg:hidden">
           <div className="product-plate relative aspect-[16/10] overflow-hidden">
             <img src={heroImg} alt="45kW Liquid Cooled Motor and Controller" fetchPriority="high" className="h-full w-full scale-110 object-contain p-6 mix-blend-multiply" />
             <span className="label absolute bottom-4 left-4 text-muted-foreground">Fig. 01 — 45kW Liquid Cooled Motor and Controller</span>
