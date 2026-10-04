@@ -107,3 +107,13 @@ html.lenis, html.lenis body { height: auto; }
   .animate-marquee, .animate-scroll-dot, .testimonial-progress { animation: none; }
   .testimonial-progress { width: 100%; }
 }
+
+@media (max-width: 767px) {
+  :root { --radius: 14px; }
+  .shell { padding-left: 16px; padding-right: 16px; }
+  .display-xl { font-size: clamp(3.35rem, 17vw, 4.5rem); line-height: 0.88; }
+  .display-l { font-size: clamp(2.8rem, 14vw, 3.8rem); line-height: 0.92; }
+  .display-m { font-size: clamp(2.35rem, 11vw, 3.2rem); line-height: 0.95; }
+  .mobile-scrollbar-none { scrollbar-width: none; }
+  .mobile-scrollbar-none::-webkit-scrollbar { display: none; }
+}

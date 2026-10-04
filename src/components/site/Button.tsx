@@ -3,7 +3,7 @@ import type { ComponentProps, ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 const base =
-  "group inline-flex items-center justify-between gap-6 rounded-full border px-5 py-3.5 font-mono text-[11px] uppercase transition-all duration-300";
+  "group min-h-12 inline-flex items-center justify-between gap-6 rounded-full border px-5 py-3.5 font-mono text-[11px] uppercase transition-all duration-300";
 const variants = {
   solid: "border-foreground bg-foreground text-background hover:border-signal hover:bg-signal hover:text-accent-foreground",
   outline: "border-foreground/20 bg-background/80 text-foreground hover:border-foreground hover:bg-foreground hover:text-background",

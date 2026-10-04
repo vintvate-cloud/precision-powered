@@ -28,11 +28,11 @@ export function TestimonialsCarousel() {
 
   return (
     <section className="overflow-hidden border-t bg-ink text-ink-foreground">
-      <div className="shell py-20 md:py-28">
+      <div className="shell py-16 md:py-28">
         <div className="flex flex-col gap-7 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="label text-signal">(06) Customer voices</p>
-            <h2 className="mt-5 max-w-4xl font-display text-5xl font-semibold leading-[0.94] md:text-7xl lg:text-8xl">
+            <h2 className="mt-5 max-w-4xl font-display text-[clamp(2.75rem,13vw,3.5rem)] font-semibold leading-[0.92] md:text-7xl lg:text-8xl">
               What our customers say.
             </h2>
           </div>
@@ -50,7 +50,7 @@ export function TestimonialsCarousel() {
         </div>
 
         <div
-          className="relative mt-14 h-[31rem] touch-pan-y [perspective:1400px] md:mt-20 md:h-[34rem]"
+          className="relative mt-10 h-[29rem] touch-pan-y [perspective:1400px] md:mt-20 md:h-[34rem]"
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
           onFocusCapture={() => setPaused(true)}
@@ -72,7 +72,7 @@ export function TestimonialsCarousel() {
                 key={testimonial.name}
                 aria-hidden={!isActive}
                 className={cn(
-                  "absolute left-1/2 top-0 flex h-[29rem] w-[86vw] max-w-[46rem] -translate-x-1/2 flex-col justify-between overflow-hidden rounded-[24px] border p-7 transition-[transform,opacity,filter] duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] md:h-[32rem] md:p-12",
+                  "absolute left-1/2 top-0 flex h-[27rem] w-[82vw] max-w-[46rem] -translate-x-1/2 flex-col justify-between overflow-hidden rounded-[20px] border p-6 transition-[transform,opacity,filter] duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] md:h-[32rem] md:rounded-[24px] md:p-12",
                   position === "active" && "z-30 translate-x-[-50%] rotate-y-0 scale-100 border-border bg-card text-card-foreground opacity-100 shadow-2xl",
                   position === "previous" && "z-10 translate-x-[-115%] rotate-y-[38deg] scale-[0.82] border-ink-border bg-ink text-ink-foreground opacity-55 brightness-75 md:translate-x-[-112%]",
                   position === "next" && "z-20 translate-x-[15%] rotate-y-[-38deg] scale-[0.82] border-ink-border bg-ink text-ink-foreground opacity-55 brightness-75 md:translate-x-[12%]",
