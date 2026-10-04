@@ -13,3 +13,4 @@
 - GSAP/Lenis load dynamically on the client via src/components/site/motion.tsx — keeps SSR safe and honours reduced motion.
 - The shared site chrome presents the company as a three-venture group while Motomanic remains the verified product catalogue — this avoids attributing unverified products or claims to the other ventures.
 - The testimonial experience uses an in-house CSS 3D coverflow with React-controlled autoplay and touch navigation — this keeps the interaction lightweight and SSR-safe.
+- Social account links share a CSS hover/focus preview component using only verified site data — this keeps previews consistent without external embeds.
