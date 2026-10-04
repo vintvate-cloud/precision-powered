@@ -29,7 +29,7 @@ function Shop() {
       <div className="sticky top-14 z-30 mt-16 border-y bg-background/90 backdrop-blur-md">
         <div className="shell flex gap-2 overflow-x-auto py-3">
           {[{ slug: "all", name: "All" }, ...categories].map((c) => (
-            <button key={c.slug} onClick={() => setFilter(c.slug)} className={cn("label shrink-0 border px-3 py-2 transition-colors", filter === c.slug ? "border-foreground bg-foreground text-background" : "border-transparent text-muted-foreground hover:text-foreground")}>
+             <button key={c.slug} onClick={() => setFilter(c.slug)} className={cn("label shrink-0 rounded-full border px-4 py-2.5 transition-colors", filter === c.slug ? "border-signal bg-signal text-accent-foreground" : "border-transparent text-muted-foreground hover:bg-secondary hover:text-foreground")}>
               {c.name} <span className="opacity-60">{c.slug === "all" ? products.length : productsIn(c.slug).length}</span>
             </button>
           ))}

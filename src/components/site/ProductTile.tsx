@@ -5,7 +5,7 @@ import { allCategories } from "@/data/site";
 export function ProductTile({ p, index }: { p: Product; index: number }) {
   const cat = allCategories.find((c) => c.slug === p.category);
   return (
-    <Link to="/product/$slug" params={{ slug: p.slug }} className="group block border-b border-r p-5 md:p-6">
+    <Link to="/product/$slug" params={{ slug: p.slug }} className="group block border-b border-r bg-card p-5 transition-colors hover:bg-secondary/60 md:p-6">
       <div className="flex items-start justify-between">
         <span className="label text-muted-foreground">{String(index + 1).padStart(2, "0")}</span>
         <span className="label text-muted-foreground transition-colors group-hover:text-signal">{cat?.name}</span>

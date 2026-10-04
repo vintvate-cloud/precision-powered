@@ -22,8 +22,9 @@ export function Footer() {
         <div className="mt-24 grid-12 gap-y-12 border-t border-ink-border pt-12">
           <div className="col-span-4 lg:col-span-4">
             <div className="flex items-center gap-3">
-              <img src={company.logo} alt="" width={36} height={36} className="h-9 w-9 object-contain" />
-              <span className="font-display text-xl font-bold">MOTOMANIC</span>
+              <span className="grid h-16 w-16 place-items-center rounded-full bg-signal p-2">
+                <img src={company.logo} alt="Motomanic" width={56} height={56} className="h-full w-full object-contain" />
+              </span>
             </div>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-ink-muted">
               Motomanic is a leading supplier of high-performance PMSM motors, controllers, and EV conversion kits, helping businesses and individuals transition to smarter, cleaner electric vehicles.
@@ -60,7 +61,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col gap-4 border-t border-ink-border py-8 md:flex-row md:items-center md:justify-between">
-          <p className="label text-ink-muted">© 2025 Motomanic — All rights reserved.</p>
+          <p className="label text-ink-muted">© 2026 Motomanic — All rights reserved.</p>
           <div className="flex gap-6">
             {contact.social.map((s) => (
               <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="label link-line text-ink-muted hover:text-ink-foreground">{s.label}</a>
