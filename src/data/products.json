@@ -1,0 +1,730 @@
+[
+ {
+  "slug": "wheel-drive-remote-operated-all-terrain-vehicle-prototype",
+  "name": "Wheel Drive Remote Operated All-Terrain Vehicle Prototype",
+  "category": "our-r-and-d-projects",
+  "description": [
+   "Motomanic’s Wheel Drive Remote Operated All-Terrain Vehicle Prototype is a rugged, versatile solution designed for challenging environments and off-road conditions.",
+   "Engineered for remote operation, it provides high mobility across diverse terrains, from rocky landscapes to soft sand and mud.",
+   "Ideal for exploration, surveying, and industrial applications, it combines powerful wheel drive with cutting-edge control systems.",
+   "Currently in prototype testing, this vehicle is being fine-tuned for enhanced performance, durability, and operational efficiency in extreme environments."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Wheel-Drive-Romote-Operated-all-Terrian-Vehicle-Proto.png"
+  ]
+ },
+ {
+  "slug": "micro-loader-prototype",
+  "name": "Micro Loader Prototype",
+  "category": "our-r-and-d-projects",
+  "description": [
+   "Motomanic’s Micro Loader Prototype is an innovative, compact solution designed for small-scale material handling in tight spaces.",
+   "Powered by an electric motor, this prototype delivers impressive lifting power while maintaining minimal environmental impact.",
+   "Perfect for urban construction sites, warehouses, and agricultural operations, it combines mobility with heavy-duty performance.",
+   "Currently in development, the prototype undergoes extensive testing to optimize efficiency, durability, and operational versatility."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Micro-Loader-Proto.jpg"
+  ]
+ },
+ {
+  "slug": "micro-mobility-passenger-cart-prototype",
+  "name": "Micro Mobility Passenger Cart Prototype",
+  "category": "our-r-and-d-projects",
+  "description": [
+   "Motomanic’s Micro Mobility Passenger Cart Prototype is designed to transform urban transportation with a compact, electric-powered solution.",
+   "This innovative prototype focuses on delivering a comfortable, eco-friendly ride for short-distance travel in crowded urban areas.",
+   "Featuring cutting-edge technology for easy maneuverability and efficiency, it’s built for sustainability and reduced emissions.",
+   "Currently undergoing rigorous testing, this R&D project aims to provide an affordable and efficient solution for modern urban mobility."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Mico-Mobility-Passanger-Cart-Proto.jpg"
+  ]
+ },
+ {
+  "slug": "96v-200ah-battery-pack",
+  "name": "96V 200Ah Battery Pack",
+  "category": "li-ion-battery-packs",
+  "description": [
+   "Motomanic’s 96V 200Ah Battery Pack is built for high-capacity electric vehicles and industrial equipment, delivering reliable, long-lasting power.",
+   "With advanced energy storage technology, it offers fast charging and excellent performance over extended periods.",
+   "Perfect for electric trucks, buses, and heavy-duty material handling applications, it ensures consistent power even under demanding conditions.",
+   "Durable, efficient, and low-maintenance, this battery pack reduces downtime and operational costs while supporting sustainable energy solutions."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/96v-200AH-Battery-Pack-scaled.jpg"
+  ]
+ },
+ {
+  "slug": "72v-100ah-lfp-battery-pack",
+  "name": "72V 100Ah LFP Battery Pack",
+  "category": "li-ion-battery-packs",
+  "description": [
+   "Motomanic’s 72V 100Ah LFP Battery Pack is designed for high-performance electric vehicles and industrial applications, offering reliable and sustained power.",
+   "Using Lithium Iron Phosphate (LFP) technology, it provides superior safety, long life cycles, and excellent thermal stability under heavy loads.",
+   "Ideal for electric carts, trucks, and material handling equipment, it ensures smooth operation and quick recharging.",
+   "Eco-friendly, low-maintenance, and built for durability, it delivers consistent energy performance while reducing operational costs."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/72v-100AH-LFP-c-Battery-Pack-scaled.jpg"
+  ]
+ },
+ {
+  "slug": "120v-100ah-lfp-battery-pack",
+  "name": "120V 100Ah LFP Battery Pack",
+  "category": "li-ion-battery-packs",
+  "description": [
+   "Motomanic’s 120V 100Ah LFP Battery Pack is designed for high-capacity, long-duration energy storage in electric vehicles and industrial machinery.",
+   "Leveraging advanced Lithium Iron Phosphate (LFP) technology, it ensures safety, excellent thermal stability, and a longer lifecycle.",
+   "Perfect for electric buses, trucks, and heavy-duty material handling equipment, it delivers reliable and efficient power for demanding applications.",
+   "Energy-efficient, fast-charging, and low-maintenance, this battery pack provides consistent, eco-friendly performance over time."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/120v-100Ah-LFP-Battey-Pack.jpg"
+  ]
+ },
+ {
+  "slug": "60v-100ah-lfp-battery-pack",
+  "name": "60V 100Ah LFP Battery Pack",
+  "category": "li-ion-battery-packs",
+  "description": [
+   "Motomanic’s 60V 100Ah LFP Battery Pack offers a high-performance, long-lasting energy solution for medium-duty electric vehicles and industrial applications.",
+   "Utilizing Lithium Iron Phosphate (LFP) technology, it provides enhanced safety, longer cycle life, and stable performance under demanding conditions.",
+   "Ideal for electric carts, light trucks, and material handling equipment, it ensures reliable power and fast charging capabilities.",
+   "Eco-friendly, low-maintenance, and built for durability, this battery pack delivers cost-effective and efficient energy storage."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/60v-100AH-LFP-Battery-Pack.jpg"
+  ]
+ },
+ {
+  "slug": "72v-200ah-lfp-battery-pack",
+  "name": "72V 200Ah LFP Battery Pack",
+  "category": "li-ion-battery-packs",
+  "description": [
+   "Motomanic’s 72V 200Ah LFP Battery Pack is designed for high-capacity, long-duration electric vehicle and industrial applications.",
+   "With its Lithium Iron Phosphate (LFP) technology, it offers enhanced safety, superior thermal stability, and an extended lifecycle.",
+   "Perfect for electric trucks, buses, and material handling equipment, it delivers reliable, consistent power for demanding applications.",
+   "Durable, fast-charging, and eco-friendly, this battery pack reduces operational costs while providing robust performance over time."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/72v-200Ah-LFP-Battery-Pack.jpg"
+  ]
+ },
+ {
+  "slug": "8-seater-or-higher-capacity-golf-carts",
+  "name": "8-Seater or Higher Capacity Golf Carts",
+  "category": "golf-carts",
+  "description": [
+   "Motomanic’s 8-Seater or Higher Capacity Golf Cart is designed for larger groups, offering exceptional comfort and ample space for up to eight passengers.",
+   "Ideal for resorts, event venues, and large properties, it combines performance with convenience for group transport.",
+   "Built with a powerful motor for effortless travel over varied terrains, it ensures a smooth, energy-efficient ride.",
+   "Durable and customizable, it delivers long-lasting performance, making it a reliable choice for high-capacity needs."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/8-Seater-Golf-carts.jpg"
+  ]
+ },
+ {
+  "slug": "6-seater-golf-cart",
+  "name": "6-Seater Golf Cart",
+  "category": "golf-carts",
+  "description": [
+   "Motomanic’s 6-Seater Golf Cart provides extra space and comfort for larger groups, ideal for golf courses, resorts, and large estates.",
+   "With seating for six, it offers an extended ride experience, perfect for family outings or group transportation.",
+   "Designed for energy efficiency and minimal maintenance, it delivers smooth operation with quiet, eco-friendly performance.",
+   "Sturdy and reliable, it’s built to last, providing excellent maneuverability even in challenging environments."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/6-Seater-Golf-cart.jpg"
+  ]
+ },
+ {
+  "slug": "4-seater-golf-cart",
+  "name": "4-Seater Golf Cart",
+  "category": "golf-carts",
+  "description": [
+   "Motomanic’s 4-Seater Golf Cart offers a compact and efficient solution for easy transportation on golf courses, resorts, and gated communities.",
+   "With seating for four, it provides a comfortable and smooth ride, perfect for short-distance travel.",
+   "Engineered for energy efficiency, it ensures low operational costs while offering a quiet, eco-friendly experience.",
+   "Built for durability and easy handling, it guarantees long-lasting performance on varied terrains."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/4-Seater-Golf-Cart-scaled.jpg"
+  ]
+ },
+ {
+  "slug": "front-axle-with-steering-rack-1-ton",
+  "name": "Front Axle with Steering Rack – 1 Ton",
+  "category": "front-axles-with-steering-systems",
+  "description": [
+   "Motomanic’s Front Axle with Steering Rack – 1 Ton is engineered for smooth, responsive handling in light-duty electric vehicles.",
+   "Designed to support up to 1 ton, it provides precise steering control and efficient load distribution.",
+   "Perfect for small electric trucks, delivery vans, and utility vehicles, enhancing maneuverability in tight spaces.",
+   "Built for durability and low-maintenance, it ensures long-lasting performance and improved vehicle safety."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Front-Axle-with-Steering-Rack-1-Ton.jpg"
+  ]
+ },
+ {
+  "slug": "steering-system-cap-up-to-5-tons",
+  "name": "Steering System Cap up to 5 Tons",
+  "category": "front-axles-with-steering-systems",
+  "description": [
+   "Motomanic’s Steering System Cap up to 5 Tons is designed for high-performance handling in heavy-duty electric vehicles.",
+   "Engineered to support up to 5 tons, it provides precise, responsive steering and ensures optimal load distribution.",
+   "Ideal for electric trucks, off-road vehicles, and commercial applications requiring robust control.",
+   "Durable, reliable, and low-maintenance, it enhances vehicle safety and maneuverability in demanding environments."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Steering-system-cap-uop-to-5-Ton.jpg"
+  ]
+ },
+ {
+  "slug": "front-axle-with-steering-system-4-tons",
+  "name": "Front Axle with Steering System – 4 Tons",
+  "category": "front-axles-with-steering-systems",
+  "description": [
+   "Motomanic’s Front Axle with Steering System – 4 Tons is engineered for superior handling and stability in heavy-duty electric vehicles.",
+   "Designed to support up to 4 tons, it ensures smooth steering and efficient load distribution under high-demand conditions.",
+   "Perfect for electric trucks, cargo vehicles, and industrial applications, offering enhanced control and safety.",
+   "Built for durability and low-maintenance, it provides reliable performance even in the most demanding environments."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Front-Axle-with-Steering-system-4-Ton.jpg"
+  ]
+ },
+ {
+  "slug": "front-axle-2-tons",
+  "name": "Front Axle 2 Tons",
+  "category": "front-axles-with-steering-systems",
+  "description": [
+   "Motomanic’s Front Axle 2 Tons is designed to provide enhanced stability and precision for medium-duty electric vehicles.",
+   "With a 2-ton capacity, it ensures smooth steering and reliable load handling, even under heavier operational loads.",
+   "Ideal for electric delivery vans, light trucks, and utility vehicles, offering improved control and safety.",
+   "Durable and low-maintenance, it delivers long-lasting performance for a wide range of applications."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Front-xle-2-Ton.jpg"
+  ]
+ },
+ {
+  "slug": "front-axle-with-steering-cap-1-ton",
+  "name": "Front Axle with Steering Cap – 1 Ton",
+  "category": "front-axles-with-steering-systems",
+  "description": [
+   "Motomanic’s Front Axle with Steering Cap – 1 Ton offers precise handling and superior stability for light-duty electric vehicles.",
+   "Designed for 1-ton capacity applications, it provides smooth steering and reliable load distribution, ensuring safe and controlled maneuvering.",
+   "Ideal for small electric trucks, delivery vehicles, and light industrial EVs.",
+   "Durable, low-maintenance, and engineered for long-term performance, it enhances vehicle efficiency and safety."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Front-Axle-with-Steering-Cap-1-Ton.jpg"
+  ]
+ },
+ {
+  "slug": "8-ton-drive-train-2",
+  "name": "8 Ton Drive Train",
+  "category": "front-axles-with-steering-systems",
+  "description": [
+   "Motomanic’s 8 Ton Drive Train is engineered to handle the most demanding heavy-duty electric vehicle applications.",
+   "With exceptional torque, power distribution, and efficiency, it’s perfect for electric trucks, construction vehicles, and industrial machinery.",
+   "Designed for seamless integration, it ensures smooth, reliable performance even under heavy loads and harsh conditions.",
+   "Durable and low-maintenance, it’s built to optimize performance while reducing operational costs over time."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/8-Ton-Drive-Train-1.jpg"
+  ]
+ },
+ {
+  "slug": "front-axle-disc-brake",
+  "name": "Front Axle Disc Brake",
+  "category": "front-axles-with-steering-systems",
+  "description": [
+   "Motomanic’s Front Axle Disc Brake is designed for enhanced braking performance and safety in electric vehicles.",
+   "Built with precision engineering, it provides superior stopping power and heat dissipation, ensuring reliable operation under demanding conditions.",
+   "Ideal for light to heavy-duty EV applications, it integrates seamlessly with existing suspension and steering systems.",
+   "Durable, low-maintenance, and efficient, it offers long-lasting performance for improved vehicle control and safety."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Fron-Axle-Disc-Brake.jpg"
+  ]
+ },
+ {
+  "slug": "customised-platform-truck-for-higher-platform-size",
+  "name": "Customised Platform Truck for Higher Platform Size",
+  "category": "customised-solutions",
+  "description": [
+   "Motomanic’s Customized Platform Truck for Higher Platform Size is designed to handle larger loads with ease, offering a tailored solution for your specific transport needs.",
+   "Built with a larger platform size, it accommodates oversized goods, making it ideal for warehouses and factories with bulky or heavy items.",
+   "Engineered for smooth maneuverability and maximum stability, even with heavy loads.",
+   "Energy-efficient and low-maintenance, this custom platform truck enhances operational productivity and reduces downtime."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Customised-Platform-Truck-for-Higher-Platform-Size-1.jpg"
+  ]
+ },
+ {
+  "slug": "electric-puller",
+  "name": "Electric Puller",
+  "category": "customised-solutions",
+  "description": [
+   "Motomanic’s Electric Puller is a tailored solution for precise, high-torque pulling in industrial and material handling applications.",
+   "Custom-designed to fit specific load requirements, it ensures smooth, controlled movement of heavy or bulky items.",
+   "Perfect for warehouses, assembly lines, and logistics centers, it integrates seamlessly into existing systems.",
+   "Durable, energy-efficient, and low-maintenance, the Electric Puller enhances efficiency while reducing operational costs."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/WhatsApp-Image-2025-09-12-at-13.46.53_765d6e78.jpg"
+  ]
+ },
+ {
+  "slug": "electric-cage-trolley",
+  "name": "Electric Cage Trolley",
+  "category": "electric-trolley",
+  "description": [
+   "Motomanic’s Electric Cage Trolley is built for secure transport of goods in cages or containers, ideal for logistics and retail applications.",
+   "Featuring a robust electric drive system, it ensures smooth movement and precise control over heavy, enclosed loads.",
+   "Perfect for warehouses, distribution centers, and retail environments where secure storage and transport are key.",
+   "Energy-efficient and easy to maneuver, it combines the reliability of an electric system with the security of a cage design."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Electric-Cage-Trolley-scaled.jpg"
+  ]
+ },
+ {
+  "slug": "electric-flatbed-trolley",
+  "name": "Electric Flatbed Trolley",
+  "category": "electric-trolley",
+  "description": [
+   "Motomanic’s Electric Flatbed Trolley provides a durable and spacious solution for moving large or bulky items in industrial environments.",
+   "Equipped with a powerful electric motor, it handles heavy loads effortlessly while maintaining optimal stability.",
+   "Perfect for warehouses, factories, and distribution centers, it enhances operational efficiency with its easy-to-use design.",
+   "Energy-efficient and low-maintenance, it ensures reliable performance for demanding material handling tasks."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Electric-Flatbad-Trolley.jpg"
+  ]
+ },
+ {
+  "slug": "electric-platform-trolley",
+  "name": "Electric Platform Trolley",
+  "category": "electric-trolley",
+  "description": [
+   "Motomanic’s Electric Platform Trolley offers a versatile, efficient solution for transporting goods in warehouses, factories, and storage areas.",
+   "With a sturdy platform and powerful electric motor, it easily carries heavy loads while maintaining smooth maneuverability.",
+   "Ideal for assembly lines, loading docks, and material handling operations, it’s designed for maximum reliability and energy efficiency.",
+   "Low-maintenance and eco-friendly, it reduces operational costs while boosting productivity."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Electric-Platform-Trolley-1.jpg"
+  ]
+ },
+ {
+  "slug": "electric-tow-truck-1-ton",
+  "name": "Electric Tow Truck 1 Ton",
+  "category": "electric-tow-truck",
+  "description": [
+   "Motomanic’s Electric Tow Truck 1 Ton is designed for light-duty towing in compact spaces and smaller facilities.",
+   "Perfect for moving smaller loads in warehouses, retail environments, or assembly lines with ease and precision.",
+   "Built for energy efficiency, it ensures low operational costs and minimal maintenance.",
+   "Compact yet powerful, it provides reliable towing capability while maintaining high maneuverability in tight spaces."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Electric-Tow-Truck-1-Ton-scaled.jpg"
+  ]
+ },
+ {
+  "slug": "electric-tow-truck-2-tons",
+  "name": "Electric Tow Truck 2 Tons",
+  "category": "electric-tow-truck",
+  "description": [
+   "Motomanic’s Electric Tow Truck 2 Tons is a compact, efficient solution for towing lighter loads in industrial environments.",
+   "Ideal for warehouses, assembly lines, and logistics centers, it ensures smooth, reliable transport of goods and vehicles.",
+   "Designed for maneuverability in tight spaces with energy-efficient operation and minimal maintenance.",
+   "Durable and eco-friendly, it delivers cost-effective performance without compromising on power or control."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Electric-Tow-Truck-2-Ton-scaled.jpg"
+  ]
+ },
+ {
+  "slug": "electric-tow-truck-3-tons",
+  "name": "Electric Tow Truck 3 Tons",
+  "category": "electric-tow-truck",
+  "description": [
+   "Motomanic’s Electric Tow Truck 3 Tons offers powerful towing capacity for medium-duty applications.",
+   "Perfect for transporting heavy loads across large facilities, warehouses, and distribution centers.",
+   "Designed for high efficiency, smooth operation, and easy maneuverability in tight spaces.",
+   "Eco-friendly and low-maintenance, it ensures reliable performance with reduced operational costs."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Electric-Tow-Truck-3-Ton.png"
+  ]
+ },
+ {
+  "slug": "electric-tow-truck-4-tons",
+  "name": "Electric Tow Truck 4 Tons",
+  "category": "electric-tow-truck",
+  "description": [
+   "Motomanic’s Electric Tow Truck 4 Tons is engineered for heavy-duty towing with a 4-ton capacity, making it ideal for large-scale operations.",
+   "Designed for smooth, efficient towing of goods and vehicles in warehouses, factories, and logistics centers.",
+   "Durable, energy-efficient, and equipped with advanced control systems for precise, reliable handling.",
+   "Low-maintenance and eco-friendly, it reduces operational costs while providing exceptional towing power and stability."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Electric-Tow-Truck-4-Ton-1.jpg"
+  ]
+ },
+ {
+  "slug": "electric-platform-truck-4-tons",
+  "name": "Electric Platform Truck 4 Tons",
+  "category": "electric-platform-truck",
+  "description": [
+   "Motomanic’s Electric Platform Truck 4 Tons is designed for heavy-duty material handling with a 4-ton capacity.",
+   "Perfect for large warehouses, distribution centers, and manufacturing plants, it ensures efficient transport of bulky goods.",
+   "Built for maximum stability and smooth maneuverability, even under heavy loads.",
+   "Energy-efficient and low-maintenance, it delivers reliable performance, reducing downtime and operational costs."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Electric-Platform-Truck-4-Ton-scaled.jpg"
+  ]
+ },
+ {
+  "slug": "electric-platform-truck-2-tons",
+  "name": "Electric Platform Truck 2 Tons",
+  "category": "electric-platform-truck",
+  "description": [
+   "Motomanic’s Electric Platform Truck 2 Tons offers a versatile and efficient solution for medium-load transport.",
+   "With a 2-ton capacity, it’s ideal for warehouses, factories, and logistics operations that require reliable material handling.",
+   "Designed for easy maneuverability and optimal stability, it ensures smooth and safe operation in tight spaces.",
+   "Durable, energy-efficient, and low-maintenance, it provides a cost-effective solution for everyday handling tasks."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Electric-Platform-Truck-2-Ton-scaled.jpg"
+  ]
+ },
+ {
+  "slug": "electric-platform-truck-1-ton",
+  "name": "Electric Platform Truck 1 Ton",
+  "category": "electric-platform-truck",
+  "description": [
+   "Motomanic’s Electric Platform Truck 1 Ton provides a compact, efficient solution for lighter material handling needs.",
+   "Perfect for small warehouses, retail environments, and workshops, it easily handles loads up to 1 ton.",
+   "Engineered for smooth maneuverability in tight spaces, ensuring maximum efficiency and ease of use.",
+   "Low maintenance and energy-efficient, it’s a reliable option for everyday transport tasks in industrial settings."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Electric-Platform-Truck-1-Ton-scaled.jpg"
+  ]
+ },
+ {
+  "slug": "electric-platform-truck-5-tons",
+  "name": "Electric Platform Truck 5 Tons",
+  "category": "electric-platform-truck",
+  "description": [
+   "Motomanic’s Electric Platform Truck 5 Tons is engineered for heavy-duty material handling with a 5-ton capacity.",
+   "Ideal for large warehouses, factories, and distribution centers, it ensures efficient and effortless transport of goods.",
+   "Built with a robust design for smooth operation and long-term durability, even under heavy loads.",
+   "Energy-efficient and low-maintenance, it delivers reliable performance while reducing operational costs."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Electric-Platform-Truck-5-Ton.png"
+  ]
+ },
+ {
+  "slug": "electric-platform-truck-3-tons",
+  "name": "Electric Platform Truck 3 Tons",
+  "category": "electric-platform-truck",
+  "description": [
+   "Motomanic’s Electric Platform Truck 3 Tons offers a powerful and efficient solution for medium-load material handling.",
+   "Designed to carry up to 3 tons, it ensures smooth movement and easy maneuverability in warehouses and factories.",
+   "Perfect for transporting goods over short distances with low maintenance and minimal energy consumption.",
+   "Built for durability, it provides reliable performance in demanding industrial environments."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/Electric-Platform-Truck-3-Ton-1.jpg"
+  ]
+ },
+ {
+  "slug": "6-ton-cap-drive-train-2",
+  "name": "6 Ton Cap Drive Train",
+  "category": "differentials",
+  "description": [
+   "Motomanic’s 6 Ton Cap Drive Train is engineered to support heavy-capacity electric vehicles with ease.",
+   "Offers robust torque and power transmission for trucks, loaders, and industrial EV applications.",
+   "Designed for durability, efficiency, and smooth operation under demanding load conditions.",
+   "Ensures reliable performance and long-lasting service life in rugged environments."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/6-Ton-cap-drive-train-1-scaled.jpg"
+  ]
+ },
+ {
+  "slug": "6-ton-drive-train",
+  "name": "6 Ton Drive Train",
+  "category": "differentials",
+  "description": [
+   "Motomanic’s 6 Ton Drive Train is built to handle the toughest heavy-duty electric vehicle applications.",
+   "Delivers exceptional power, torque, and efficiency for electric trucks, construction vehicles, and industrial machinery.",
+   "Engineered for seamless integration with superior load handling and stability.",
+   "Durable, reliable, and designed for optimal performance in demanding environments."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/6-Ton-drive-train-scaled.jpg"
+  ]
+ },
+ {
+  "slug": "4-ton-42-52-56-inch-differential",
+  "name": "4 Ton 42, 52, 56 Inch Differential",
+  "category": "differentials",
+  "description": [
+   "Motomanic’s 4 Ton 42, 52, 56 Inch Differential offers powerful torque distribution for heavy-duty electric vehicles.",
+   "Designed for optimal load handling and stability, making it ideal for trucks, off-road vehicles, and industrial EVs.",
+   "Available in multiple sizes to fit various vehicle configurations, providing versatile performance.",
+   "Built for durability, ensuring long-term reliability even under the most demanding conditions."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/4-Ton-42-52-56-Inch-differential-scaled.jpg"
+  ]
+ },
+ {
+  "slug": "2-ton-differential-axle",
+  "name": "2 Ton Differential Axle",
+  "category": "differentials",
+  "description": [
+   "Motomanic’s 2 Ton Differential Axle is designed for high-load electric vehicles and utility platforms.",
+   "Engineered for optimal torque distribution, it ensures smooth and stable handling under heavy-duty conditions.",
+   "Perfect for electric trucks, commercial vehicles, and off-road EVs.",
+   "Durable construction guarantees long-lasting performance and reliability, even in the toughest environments."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/2-Ton-Differntial-Axle.jpg"
+  ]
+ },
+ {
+  "slug": "1-ton-differential-kits",
+  "name": "1 Ton Differential Kits",
+  "category": "differentials",
+  "description": [
+   "Motomanic’s 1 Ton Differential Kits provide robust power distribution for medium-duty electric vehicles.",
+   "Designed for smooth torque transfer and optimal stability in electric trucks, vans, and utility vehicles.",
+   "Built with durability in mind, ensuring reliable performance even under heavy loads.",
+   "Easy to integrate and ideal for maximizing efficiency and longevity in your EV powertrain."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/1-Ton-Differntia-Kits-scaled.jpg"
+  ]
+ },
+ {
+  "slug": "all-drives-2",
+  "name": "All Drives – 2",
+  "category": "differentials",
+  "description": [
+   "Motomanic’s All Drives – 2 is an advanced drive system designed for maximum power and efficiency.",
+   "With superior torque control and robust performance, it’s ideal for a wide range of electric vehicles.",
+   "Perfect for electric buses, trucks, and industrial-grade platforms that demand high capacity.",
+   "Built for durability, seamless integration, and reliable performance across diverse operating conditions."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/All-drives-2.jpg"
+  ]
+ },
+ {
+  "slug": "all-drive-1",
+  "name": "All Drive -1",
+  "category": "differentials",
+  "description": [
+   "Motomanic’s All Drive 1 system offers a comprehensive, all-in-one solution for electric vehicle powertrains.",
+   "Designed for seamless integration, it combines superior torque delivery with high efficiency.",
+   "Perfect for all types of EVs, from light-duty to heavy-duty applications.",
+   "Built to optimize performance, reliability, and energy management across various terrains."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/All-Drive-1.png"
+  ]
+ },
+ {
+  "slug": "10kw-motor-and-56-inch-differential-set-3",
+  "name": "10kW Motor and 56-Inch Differential Set-3",
+  "category": "differentials",
+  "description": [
+   "Motomanic’s 10kW Motor and 56-Inch Differential Set-3 deliver high-performance power and torque for heavy-duty EVs.",
+   "The 10kW motor provides smooth acceleration, while the 56-inch differential ensures optimal torque distribution.",
+   "Ideal for electric trucks, off-road vehicles, and large utility platforms.",
+   "Built for durability, efficiency, and seamless integration in demanding applications."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/10kw-Motor-and-56inch-differntial-set-3-scaled.jpg"
+  ]
+ },
+ {
+  "slug": "45kw-liquid-cooled-motor-and-controller",
+  "name": "45kW Liquid Cooled Motor and Controller",
+  "category": "pmsm-motor-and-controller",
+  "description": [
+   "Maximize your EV’s performance with Motomanic’s 45kW Liquid Cooled Motor and Controller.",
+   "Built for high-power applications, offering superior thermal management for consistent output.",
+   "Ideal for electric buses, heavy-duty trucks, and large commercial vehicles.",
+   "Engineered for long-lasting efficiency, smooth acceleration, and reliable cooling under load."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/45Kw-Liquid-Cooled-Motor-and-Controller-1.png"
+  ]
+ },
+ {
+  "slug": "96v-20kw-pmsm-motor-and-controller",
+  "name": "96V 20kW PMSM Motor and Controller",
+  "category": "pmsm-motor-and-controller",
+  "description": [
+   "Motomanic’s 96V 20kW PMSM Motor and Controller offer powerful, efficient drive solutions.",
+   "Designed for demanding EV applications with high torque and thermal reliability.",
+   "Perfect for electric loaders, commercial vehicles, and high-performance platforms.",
+   "Ensures smooth acceleration, precise control, and long-lasting durability."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/20kw-96V-PMSM-Motor-and-Controller-1-1.jpeg"
+  ]
+ },
+ {
+  "slug": "120v-20kw-pmsm-motor-and-controller",
+  "name": "120V 20kW PMSM Motor and Controller",
+  "category": "pmsm-motor-and-controller",
+  "description": [
+   "Unleash maximum performance with Motomanic’s 120V 20kW PMSM Motor and Controller.",
+   "Designed for heavy-duty EVs requiring high torque, speed, and thermal efficiency.",
+   "Ideal for electric trucks, performance EVs, and industrial-grade applications.",
+   "Built for durability, smooth power delivery, and intelligent motor control."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/120v-20Kw-PMSM-Motor-controller-1.jpg"
+  ]
+ },
+ {
+  "slug": "15kw-96v-pmsm-motor-and-controller",
+  "name": "15KW 96V PMSM Motor and Controller",
+  "category": "pmsm-motor-and-controller",
+  "description": [
+   "Motomanic’s 15kW 96V PMSM Motor and Controller deliver high-power performance for advanced EVs.",
+   "Engineered for exceptional torque, efficiency, and reliable thermal stability.",
+   "Ideal for electric cars, commercial vehicles, and heavy-duty applications.",
+   "Precision control and robust design ensure smooth, responsive, and durable operation."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/15Kw-96V-PMSM-Motor-Controller-1-scaled.jpg"
+  ]
+ },
+ {
+  "slug": "72v-13kw-pmsm-motor-and-controller",
+  "name": "72V 13Kw PMSM Motor and Controller",
+  "category": "pmsm-motor-and-controller",
+  "description": [
+   "Experience top-tier EV performance with Motomanic’s 72V 13kW PMSM Motor and Controller.",
+   "Delivers powerful torque, high efficiency, and superior thermal management.",
+   "Perfect for high-speed electric vehicles, off-road EVs, and commercial fleets.",
+   "Built for precision control, durability, and peak power delivery on demand."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/72v-13Kw-PMSM-Motor-and-Controller-1-scaled.jpg"
+  ]
+ },
+ {
+  "slug": "10kw-pmsm-motor-and-controller",
+  "name": "10Kw PMSM Motor and Controller",
+  "category": "pmsm-motor-and-controller",
+  "description": [
+   "Motomanic’s 10kW PMSM Motor and Controller offer unmatched power for heavy-duty EVs.",
+   "Engineered for high torque, peak efficiency, and smooth acceleration.",
+   "Ideal for electric cars, loaders, and commercial-grade vehicles.",
+   "Rugged build with intelligent control for consistent high-performance output."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/10Kw-PMSM-Motor-and-Controller-1.jpg"
+  ]
+ },
+ {
+  "slug": "72v-6kw-ipm-motor-and-controller",
+  "name": "72V 6Kw IPM Motor and Controller",
+  "category": "pmsm-motor-and-controller",
+  "description": [
+   "Power up your EV with Motomanic’s 72V 6kW IPM Motor and Controller system.",
+   "Designed for high-efficiency output with compact, high-torque IPM technology.",
+   "Ideal for performance-focused EVs, utility vehicles, and commercial applications.",
+   "Delivers precise control, reduced heat, and reliable long-term operation."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/72v-6KW-IPM-Motor-and-Controller-1-scaled.jpg"
+  ]
+ },
+ {
+  "slug": "5kw-pmsm-motor-and-controller",
+  "name": "5Kw PMSM Motor and Controller",
+  "category": "pmsm-motor-and-controller",
+  "description": [
+   "Motomanic’s 5kW PMSM Motor and Controller deliver high torque with exceptional efficiency.",
+   "Perfect for powerful EVs, including three-wheelers and compact utility vehicles.",
+   "Advanced motor control ensures smooth performance and responsive handling.",
+   "Built for rugged use with reliable thermal and overload protection."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/5Kw-PMSM-Motor-and-Controller-1.jpg"
+  ]
+ },
+ {
+  "slug": "4kw-ipm-motor-and-controller",
+  "name": "4Kw IPM Motor and Controller",
+  "category": "pmsm-motor-and-controller",
+  "description": [
+   "Unleash high-efficiency performance with Motomanic’s 4kW IPM Motor and Controller.",
+   "Interior Permanent Magnet design ensures superior torque and thermal management.",
+   "Ideal for high-performance EVs, cargo vehicles, and utility applications.",
+   "Engineered for smooth operation, long life, and peak power delivery."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/4Kw-IPM-Motor-and-Controller-1.png"
+  ]
+ },
+ {
+  "slug": "2kw-shafted-pmsm-motor-and-controller",
+  "name": "2kW Shafted PMSM Motor and Controller",
+  "category": "pmsm-motor-and-controller",
+  "description": [
+   "Experience powerful performance with Motomanic’s 2kW Shafted PMSM Motor and Controller.",
+   "Built for precision, durability, and enhanced torque transmission via shaft drive.",
+   "Ideal for high-load EV applications like cargo e-bikes and utility vehicles.",
+   "Seamless control system ensures smooth acceleration and reliable operation."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/2Kw-Shafted-PMSM-Motor-and-Controller-Set-1-scaled.jpg"
+  ]
+ },
+ {
+  "slug": "2kw-pmsm-motor-and-controller-set",
+  "name": "2kW PMSM Motor and Controller Set",
+  "category": "pmsm-motor-and-controller",
+  "description": [
+   "Motomanic’s 2kW PMSM Motor and Controller deliver robust performance for mid-range EVs.",
+   "Optimized for high torque, thermal stability, and energy efficiency.",
+   "Perfect for electric scooters, bikes, and light utility vehicles.",
+   "Designed for durability with smooth, responsive acceleration control."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/2Kw-PMSM-Motor-and-Controller-Set-1.jpg"
+  ]
+ },
+ {
+  "slug": "1-5kw-pmsm-motor-and-controller",
+  "name": "1.5kW PMSM Motor and Controller",
+  "category": "pmsm-motor-and-controller",
+  "description": [
+   "Power your EV with precision using Motomanic’s 1.5kW PMSM Motor and Controller.",
+   "Engineered for high efficiency, smooth torque delivery, and compact performance.",
+   "Ideal for two-wheelers and light EV applications demanding reliability.",
+   "Plug-and-play integration ensures seamless installation and control."
+  ],
+  "images": [
+   "https://motomanicev.com/wp-content/uploads/2025/09/1.5Kw-PMSM-Motor-and-Controller-1.jpg"
+  ]
+ }
+]
