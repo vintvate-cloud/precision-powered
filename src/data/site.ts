@@ -38,6 +38,9 @@ export const company = {
   ],
 };
 
+// Venture names supplied directly by the company.
+export const ventures = ["Motomanic", "MA Motors", "Mototrends"] as const;
+
 export const founder = {
   name: "Mr. Ashutosh Gupta",
   role: "Founder, Motomanic",

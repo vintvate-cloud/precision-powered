@@ -3,10 +3,10 @@ import type { ComponentProps, ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 const base =
-  "group inline-flex items-center justify-between gap-6 border px-5 py-4 font-mono text-[11px] uppercase tracking-[0.18em] transition-colors duration-300";
+  "group inline-flex items-center justify-between gap-6 rounded-full border px-5 py-3.5 font-mono text-[11px] uppercase transition-all duration-300";
 const variants = {
-  solid: "border-foreground bg-foreground text-background hover:bg-signal hover:border-signal hover:text-accent-foreground",
-  outline: "border-foreground/30 text-foreground hover:border-foreground hover:bg-foreground hover:text-background",
+  solid: "border-foreground bg-foreground text-background hover:border-signal hover:bg-signal hover:text-accent-foreground",
+  outline: "border-foreground/20 bg-background/80 text-foreground hover:border-foreground hover:bg-foreground hover:text-background",
   ink: "border-ink-foreground/30 text-ink-foreground hover:bg-ink-foreground hover:text-ink",
   signal: "border-signal bg-signal text-accent-foreground hover:bg-ink-foreground hover:text-ink hover:border-ink-foreground",
 };

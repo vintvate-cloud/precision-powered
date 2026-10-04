@@ -1,6 +1,6 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
-import { categories, contact, subcategories } from "@/data/site";
+import { categories, company, contact, subcategories, ventures } from "@/data/site";
 import { cn } from "@/lib/utils";
 import { loadGsap, prefersReduced } from "./motion";
 
@@ -68,23 +68,23 @@ export function Header() {
       <header
         className={cn(
           "fixed inset-x-0 top-0 z-50 transition-[transform,background-color,border-color] duration-500",
-          scrolled ? "border-b bg-background/85 backdrop-blur-md" : "border-b border-transparent",
+          scrolled ? "border-b bg-background/90 backdrop-blur-md" : "border-b border-transparent",
           hidden && !open && "-translate-y-full",
         )}
       >
-        <div className={cn("shell flex items-center justify-between transition-[height] duration-500", scrolled ? "h-14" : "h-20")}>
-          <Link to="/" className="flex items-center gap-3" aria-label="Motomanic home">
-            <img src="https://motomanicev.com/wp-content/uploads/2025/08/logo-90x90-1.webp" alt="" width={32} height={32} className="h-8 w-8 object-contain" />
-            <span className="font-display text-lg font-bold tracking-[-0.02em]">MOTOMANIC</span>
+        <div className={cn("shell grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-3 transition-[height] duration-500", scrolled ? "h-16" : "h-24")}>
+          <Link to="/" className="flex shrink-0 items-center" aria-label="Motomanic home">
+            <span className="grid h-14 w-14 place-items-center rounded-full bg-foreground p-1.5 shadow-sm transition-transform duration-300 hover:scale-105">
+              <img src={company.logo} alt="Motomanic" width={48} height={48} className="h-full w-full object-contain" />
+            </span>
           </Link>
 
-          <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
+          <nav className="mx-auto hidden items-center gap-1 rounded-full border bg-card/90 p-1.5 shadow-sm backdrop-blur-md lg:flex" aria-label="Primary">
             {nav.map((n) =>
               n.to === "/all-categories" ? (
                 <div key={n.to} className="group relative" onMouseLeave={() => setCatsOpen(false)}>
-                  <Link to={n.to} onMouseEnter={() => setCatsOpen(true)} onFocus={() => setCatsOpen(true)} className={cn("label relative py-2", isActive(n.to) ? "text-foreground" : "text-muted-foreground hover:text-foreground")}>
+                  <Link to={n.to} onMouseEnter={() => setCatsOpen(true)} onFocus={() => setCatsOpen(true)} className={cn("label relative rounded-full px-4 py-2.5", isActive(n.to) ? "bg-signal text-accent-foreground" : "text-muted-foreground hover:bg-secondary hover:text-foreground")}>
                     {n.label}
-                    <span className={cn("absolute -bottom-0.5 left-0 h-px bg-signal transition-all duration-500", isActive(n.to) ? "w-full" : "w-0 group-hover:w-full")} />
                   </Link>
                   <div className={cn("absolute left-1/2 top-full w-[34rem] -translate-x-1/2 pt-4 transition-all duration-300", catsOpen ? "visible translate-y-0 opacity-100" : "invisible -translate-y-1 opacity-0")}>
                     <div className="grid grid-cols-2 border bg-card p-2">
@@ -106,17 +106,20 @@ export function Header() {
                   </div>
                 </div>
               ) : (
-                <Link key={n.to} to={n.to} className={cn("group label relative py-2", isActive(n.to) ? "text-foreground" : "text-muted-foreground hover:text-foreground")}>
+                <Link key={n.to} to={n.to} className={cn("group label relative rounded-full px-4 py-2.5", isActive(n.to) ? "bg-signal text-accent-foreground" : "text-muted-foreground hover:bg-secondary hover:text-foreground")}>
                   {n.label}
-                  <span className={cn("absolute -bottom-0.5 left-0 h-px bg-signal transition-all duration-500", isActive(n.to) ? "w-full" : "w-0 group-hover:w-full")} />
                 </Link>
               ),
             )}
           </nav>
 
-          <div className="flex items-center gap-4">
-            <a href={`tel:${contact.phones[0].tel}`} className="label hidden text-muted-foreground hover:text-foreground xl:block">{contact.phones[0].display}</a>
-            <Link to="/contact-us" className="label hidden border border-foreground px-4 py-2.5 transition-colors hover:bg-foreground hover:text-background md:block">Enquire</Link>
+          <div className="flex min-w-0 items-center justify-end gap-2">
+            <div className="hidden items-center gap-1 rounded-full border bg-card/90 p-1 xl:flex" aria-label="Company ventures">
+              {ventures.map((venture, index) => (
+                <span key={venture} className={cn("label rounded-full px-3 py-2", index === 0 ? "bg-foreground text-background" : "text-muted-foreground")}>{venture}</span>
+              ))}
+            </div>
+            <Link to="/contact-us" className="label hidden rounded-full bg-foreground px-5 py-3 text-background transition-colors hover:bg-signal hover:text-accent-foreground md:block">Enquire ↗</Link>
             <button onClick={() => setOpen((o) => !o)} className="relative z-[60] flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open}>
               <span className={cn("h-px w-6 bg-current transition-transform duration-500", open && "translate-y-[3.5px] rotate-45 text-ink-foreground")} />
               <span className={cn("h-px w-6 bg-current transition-transform duration-500", open && "-translate-y-[3.5px] -rotate-45 text-ink-foreground")} />
