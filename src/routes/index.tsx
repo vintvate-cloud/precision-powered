@@ -119,7 +119,7 @@ function Hero() {
 
         <div className="absolute inset-x-0 bottom-0 h-[250px] bg-signal md:h-[290px] lg:h-[38%]" />
         <div data-h-img className="absolute bottom-0 left-1/2 z-20 h-[260px] w-[86vw] -translate-x-1/2 md:h-[310px] md:w-[72vw] lg:h-[48%] lg:w-[60vw]">
-          <img src={heroImg} alt="45kW Liquid Cooled Motor and Controller" fetchPriority="high" className="h-full w-full object-contain object-bottom mix-blend-multiply drop-shadow-2xl" />
+          <img src={heroImg} alt="45kW Liquid Cooled Motor and Controller" fetchPriority="high" className="h-full w-full scale-[1.85] object-contain object-bottom mix-blend-multiply drop-shadow-2xl md:scale-[1.65] lg:scale-[1.45]" />
         </div>
 
         <div data-h-panel className="absolute bottom-24 left-5 z-30 hidden rounded-[18px] bg-foreground/80 p-5 text-background backdrop-blur-md md:block lg:bottom-20 lg:left-10">

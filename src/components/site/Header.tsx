@@ -145,6 +145,14 @@ export function Header() {
               <Link key={c.slug} to="/product-category/$slug" params={{ slug: c.slug }} className="py-1 text-sm text-ink-muted">{c.name}</Link>
             ))}
           </div>
+          <div data-m-meta className="mt-8 border-t border-ink-border pt-5">
+            <p className="label mb-3 text-ink-muted">Our ventures</p>
+            <div className="flex flex-wrap gap-2">
+              {ventures.map((venture, index) => (
+                <span key={venture} className={cn("label rounded-full border border-ink-border px-3 py-2", index === 0 && "border-signal bg-signal text-accent-foreground")}>{venture}</span>
+              ))}
+            </div>
+          </div>
           <div data-m-meta className="mt-auto space-y-2 pt-10">
             {contact.phones.map((p) => (
               <a key={p.tel} href={`tel:${p.tel}`} className="block font-mono text-sm">{p.label} — {p.display}</a>
