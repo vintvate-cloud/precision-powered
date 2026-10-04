@@ -5,7 +5,6 @@ import { ButtonLink } from "./Button";
 export function Footer() {
   return (
     <footer className="relative overflow-hidden bg-ink text-ink-foreground">
-      <div className="ink-grid pointer-events-none absolute inset-0 opacity-60" aria-hidden />
       <div className="shell relative pt-24 md:pt-32">
         <div className="grid-12 items-end gap-y-10">
           <div className="col-span-4 md:col-span-8 lg:col-span-8">

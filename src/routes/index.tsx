@@ -81,7 +81,7 @@ function Hero() {
 
   return (
     <section ref={root} className="shell pb-5 pt-24 md:pb-8 md:pt-28">
-      <div className="reference-grid relative isolate h-[720px] overflow-hidden rounded-[24px] border bg-card shadow-sm md:h-[760px] lg:aspect-[16/9] lg:h-auto lg:max-h-[820px] lg:min-h-[660px]">
+      <div className="relative isolate h-[720px] overflow-hidden rounded-[24px] border bg-card shadow-sm md:h-[760px] lg:aspect-[16/9] lg:h-auto lg:max-h-[820px] lg:min-h-[660px]">
         <div data-h-grid className="pointer-events-none absolute inset-0" aria-hidden />
 
         <div className="relative z-10 grid gap-6 px-5 pt-10 md:px-8 md:pt-14 lg:grid-cols-12 lg:px-10 lg:pt-16">
@@ -97,7 +97,7 @@ function Hero() {
           </div>
 
           <div data-h-panel className="lg:col-span-5 lg:pt-4">
-            <div className="rounded-[20px] bg-background/92 p-4 shadow-sm backdrop-blur-sm md:p-7">
+            <div className="rounded-[20px] border bg-card/95 p-4 shadow-sm backdrop-blur-sm md:p-7">
               <p className="label text-muted-foreground">EV systems / product range</p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {["PMSM motors", "Controllers", "Battery packs", "Drivetrains"].map((item, index) => (
@@ -109,7 +109,7 @@ function Hero() {
                   <p className="font-display text-xl font-semibold leading-tight md:text-3xl">High-performance components for electric mobility.</p>
                   <p className="mt-4 hidden text-sm leading-relaxed text-muted-foreground md:block">Motors, controllers and EV conversion systems engineered for real-world use.</p>
                 </div>
-                <div className="product-plate aspect-square overflow-hidden">
+                <div className="aspect-square overflow-hidden">
                   <img src={heroImg} alt="45kW Liquid Cooled Motor and Controller" className="h-full w-full object-contain p-2 mix-blend-multiply" />
                 </div>
               </div>
@@ -119,7 +119,7 @@ function Hero() {
 
         <div className="absolute inset-x-0 bottom-0 h-[250px] bg-signal md:h-[290px] lg:h-[38%]" />
         <div data-h-img className="absolute bottom-0 left-1/2 z-20 h-[260px] w-[86vw] -translate-x-1/2 md:h-[310px] md:w-[72vw] lg:h-[48%] lg:w-[60vw]">
-          <img src={heroImg} alt="45kW Liquid Cooled Motor and Controller" fetchPriority="high" className="h-full w-full scale-[1.85] object-contain object-bottom mix-blend-multiply drop-shadow-2xl md:scale-[1.65] lg:scale-[1.45]" />
+          <img src={heroImg} alt="45kW Liquid Cooled Motor and Controller" fetchPriority="high" className="h-full w-full scale-[1.85] object-contain object-bottom mix-blend-multiply drop-shadow-xl md:scale-[1.65] lg:scale-[1.45]" />
         </div>
 
         <div data-h-panel className="absolute bottom-24 left-5 z-30 hidden rounded-[18px] bg-foreground/80 p-5 text-background backdrop-blur-md md:block lg:bottom-20 lg:left-10">
@@ -215,7 +215,7 @@ function CategoryIndex() {
             ))}
           </ol>
           <div className="hidden lg:col-span-5 lg:block">
-            <div className="sticky top-28 product-plate aspect-[4/5] overflow-hidden">
+            <div className="sticky top-28 aspect-[4/5] overflow-hidden rounded-[24px] border bg-card">
               {list.map((c, i) => (
                 <img key={c.slug} src={categoryImage(c)} alt="" loading="lazy" className={cn("absolute inset-0 h-full w-full object-contain p-10 mix-blend-multiply transition-all duration-700", active === i ? "scale-100 opacity-100" : "scale-105 opacity-0")} />
               ))}
@@ -256,7 +256,6 @@ function Story() {
   return (
     <section ref={root} className="bg-ink text-ink-foreground">
       <div data-pin className="relative overflow-hidden lg:h-screen">
-        <div className="ink-grid pointer-events-none absolute inset-0 opacity-50" aria-hidden />
         <div className="shell relative grid-12 h-full gap-y-16 py-24 lg:items-center lg:py-0">
           <div className="col-span-4 md:col-span-8 lg:col-span-4">
             <p className="label text-signal">(03) The company</p>

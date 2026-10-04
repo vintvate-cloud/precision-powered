@@ -49,7 +49,6 @@ function ProductPage() {
   return (
     <div key={p.slug}>
       <section className="relative pt-28">
-        <div className="eng-grid pointer-events-none absolute inset-0" aria-hidden />
         <div className="shell relative">
           <nav className="label flex flex-wrap gap-2 text-muted-foreground" aria-label="Breadcrumb">
             <Link to="/" className="hover:text-foreground">Home</Link>/
@@ -59,7 +58,7 @@ function ProductPage() {
 
           <div className="mt-10 grid-12 gap-y-10 pb-20">
             <div className="col-span-4 md:col-span-8 lg:col-span-7">
-              <Reveal kind="image" className="product-plate relative aspect-[4/3]">
+              <Reveal kind="image" className="relative aspect-[4/3] overflow-hidden rounded-[24px] border bg-card">
                 {p.images[0] && <img src={p.images[0]} alt={p.name} fetchPriority="high" className="h-full w-full object-contain p-8 mix-blend-multiply md:p-14" />}
                 <span className="label absolute bottom-4 left-4 text-muted-foreground">{String(idx + 1).padStart(2, "0")} / {products.length}</span>
               </Reveal>

@@ -33,7 +33,7 @@ function AllCategories() {
                   {subs.length > 0 && <p className="label mt-4 text-muted-foreground">{subs.map((s) => s.name).join(" · ")}</p>}
                 </div>
                 <span className="label col-span-4 md:col-span-1 lg:col-span-2 text-muted-foreground">{productsIn(c.slug).length} products</span>
-                <div className="product-plate col-span-4 md:col-span-2 lg:col-span-3 aspect-[4/3] overflow-hidden">
+                <div className="col-span-4 aspect-[4/3] overflow-hidden rounded-lg md:col-span-2 lg:col-span-3">
                   <img src={categoryImage(c)} alt="" loading="lazy" className="h-full w-full object-contain p-4 mix-blend-multiply transition-transform duration-700 group-hover:scale-105" />
                 </div>
               </Link>

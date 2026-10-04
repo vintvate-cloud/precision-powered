@@ -10,7 +10,7 @@ export function ProductTile({ p, index }: { p: Product; index: number }) {
         <span className="label text-muted-foreground">{String(index + 1).padStart(2, "0")}</span>
         <span className="label text-muted-foreground transition-colors group-hover:text-signal">{cat?.name}</span>
       </div>
-      <div className="product-plate mt-5 aspect-[4/3] overflow-hidden">
+      <div className="mt-5 aspect-[4/3] overflow-hidden rounded-lg">
         {p.images[0] && (
           <img src={p.images[0]} alt={p.name} loading="lazy" className="h-full w-full object-contain p-4 mix-blend-multiply transition-transform duration-700 ease-out group-hover:scale-[1.04]" />
         )}
