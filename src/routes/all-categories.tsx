@@ -19,7 +19,7 @@ function AllCategories() {
     <div className="pt-32 pb-32">
       <section className="shell">
         <p className="label text-muted-foreground">{categories.length} categories</p>
-        <MaskLines className="display-xl mt-6" lines={["All", "categories"]} />
+        <MaskLines className="mt-6 font-display text-[13vw] font-medium uppercase leading-[0.88] md:text-[10vw] lg:text-[7vw]" lines={["All", "categories"]} />
       </section>
       <section className="shell mt-20">
         {categories.map((c, i) => {
