@@ -6,11 +6,11 @@ import { SocialPreviewLink } from "./SocialPreviewLink";
 export function Footer() {
   return (
     <footer className="relative overflow-hidden bg-ink text-ink-foreground">
-      <div className="shell relative pt-24 md:pt-32">
+      <div className="shell relative pt-16 md:pt-32">
         <div className="grid-12 items-end gap-y-10">
           <div className="col-span-4 md:col-span-8 lg:col-span-8">
             <p className="label text-signal">Need help finding the right product?</p>
-            <a href={`tel:${contact.phones[1].tel}`} className="mt-6 block font-display text-[12vw] font-semibold leading-[0.9] tracking-[-0.04em] transition-colors hover:text-signal lg:text-[7.5vw]">
+            <a href={`tel:${contact.phones[1].tel}`} className="mt-5 block font-display text-[clamp(2rem,10vw,3rem)] font-semibold leading-[0.9] transition-colors hover:text-signal md:mt-6 md:text-[8vw] lg:text-[7.5vw]">
               {contact.phones[1].display}
             </a>
           </div>
@@ -19,7 +19,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-24 grid-12 gap-y-12 border-t border-ink-border pt-12">
+        <div className="mt-16 grid-12 gap-y-12 border-t border-ink-border pt-10 md:mt-24 md:pt-12">
           <div className="col-span-4 lg:col-span-4">
             <div className="flex items-center gap-3">
               <span className="grid h-16 w-16 place-items-center rounded-full bg-signal p-2">

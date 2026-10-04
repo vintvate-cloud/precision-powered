@@ -44,7 +44,7 @@ export function InquiryForm({ product, tone = "light" }: { product?: string; ton
 
   const ink = tone === "ink";
   const field = cn(
-    "peer w-full border-0 border-b bg-transparent px-0 pb-3 pt-6 text-lg outline-none transition-colors placeholder:text-transparent focus:border-signal",
+    "peer min-h-12 w-full border-0 border-b bg-transparent px-0 pb-3 pt-6 text-base outline-none transition-colors placeholder:text-transparent focus:border-signal md:text-lg",
     ink ? "border-ink-border text-ink-foreground" : "border-input",
   );
   const lab = cn("label pointer-events-none absolute left-0 top-0", ink ? "text-ink-muted" : "text-muted-foreground");
@@ -62,7 +62,7 @@ export function InquiryForm({ product, tone = "light" }: { product?: string; ton
   );
 
   return (
-    <form onSubmit={submit} noValidate className="grid gap-x-8 gap-y-8 md:grid-cols-2">
+    <form onSubmit={submit} noValidate className="grid gap-x-8 gap-y-7 md:grid-cols-2 md:gap-y-8">
       {F({ k: "first", label: "First name *" })}
       {F({ k: "last", label: "Last name" })}
       {F({ k: "email", label: "Email *", type: "email" })}
@@ -74,7 +74,7 @@ export function InquiryForm({ product, tone = "light" }: { product?: string; ton
             ? "Your email app should open with your enquiry ready to send. If it didn't, write to us at " + contact.email + "."
             : "Sending opens your email app with your details filled in."}
         </p>
-        <Button type="submit" variant={ink ? "signal" : "solid"} className="md:min-w-64">Send enquiry</Button>
+        <Button type="submit" variant={ink ? "signal" : "solid"} className="w-full md:w-auto md:min-w-64">Send enquiry</Button>
       </div>
     </form>
   );

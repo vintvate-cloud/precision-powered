@@ -72,9 +72,9 @@ export function Header() {
           hidden && !open && "-translate-y-full",
         )}
       >
-        <div className={cn("shell grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-3 transition-[height] duration-500", scrolled ? "h-16" : "h-24")}>
+        <div className={cn("shell grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-3 transition-[height] duration-500", scrolled ? "h-16" : "h-20 md:h-24")}>
           <Link to="/" className="flex shrink-0 items-center" aria-label="Motomanic home">
-            <span className="grid h-14 w-14 place-items-center rounded-full bg-foreground p-1.5 shadow-sm transition-transform duration-300 hover:scale-105">
+            <span className="grid h-12 w-12 place-items-center rounded-2xl bg-foreground p-1.5 shadow-sm transition-transform duration-300 hover:scale-105 md:h-14 md:w-14 md:rounded-full">
               <img src={company.logo} alt="Motomanic" width={48} height={48} className="h-full w-full object-contain" />
             </span>
           </Link>
@@ -120,7 +120,7 @@ export function Header() {
               ))}
             </div>
             <Link to="/contact-us" className="label hidden rounded-full bg-foreground px-5 py-3 text-background transition-colors hover:bg-signal hover:text-accent-foreground md:block">Enquire ↗</Link>
-            <button onClick={() => setOpen((o) => !o)} className="relative z-[60] flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open}>
+            <button onClick={() => setOpen((o) => !o)} className="relative z-[60] flex h-12 w-12 flex-col items-center justify-center gap-1.5 rounded-2xl border bg-background/80 backdrop-blur-md lg:hidden" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open}>
               <span className={cn("h-px w-6 bg-current transition-transform duration-500", open && "translate-y-[3.5px] rotate-45 text-ink-foreground")} />
               <span className={cn("h-px w-6 bg-current transition-transform duration-500", open && "-translate-y-[3.5px] -rotate-45 text-ink-foreground")} />
             </button>
@@ -128,12 +128,12 @@ export function Header() {
         </div>
       </header>
 
-      <div ref={menuRef} className="invisible fixed inset-0 z-[55] flex flex-col bg-ink pt-24 text-ink-foreground lg:hidden" aria-hidden={!open}>
+      <div ref={menuRef} className="invisible fixed inset-0 z-[55] flex flex-col bg-ink pt-20 text-ink-foreground lg:hidden" aria-hidden={!open}>
         <div className="shell flex flex-1 flex-col overflow-y-auto pb-10">
           <ul className="space-y-1">
             {nav.map((n, i) => (
               <li key={n.to} className="overflow-hidden border-b border-ink-border">
-                <Link data-m-link to={n.to} className="flex items-baseline gap-4 py-4 font-display text-5xl font-semibold tracking-[-0.03em]">
+                <Link data-m-link to={n.to} className="flex min-w-0 items-baseline gap-3 py-4 font-display text-[clamp(2.1rem,11vw,3rem)] font-semibold leading-none">
                   <span className="label text-ink-muted">{String(i + 1).padStart(2, "0")}</span>
                   {n.label}
                 </Link>

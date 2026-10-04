@@ -21,13 +21,13 @@ function Shop() {
   const [filter, setFilter] = useState<string>("all");
   const list = filter === "all" ? products : productsIn(filter);
   return (
-    <div className="pt-32">
+    <div className="pt-24 md:pt-32">
       <section className="shell">
         <p className="label text-muted-foreground">Index — {products.length} products</p>
         <MaskLines className="display-xl mt-6" lines={["All", "products"]} />
       </section>
-      <div className="sticky top-14 z-30 mt-16 border-y bg-background/90 backdrop-blur-md">
-        <div className="shell flex gap-2 overflow-x-auto py-3">
+       <div className="sticky top-16 z-30 mt-10 border-y bg-background/95 backdrop-blur-md md:mt-16">
+        <div className="shell mobile-scrollbar-none flex gap-2 overflow-x-auto py-3">
           {[{ slug: "all", name: "All" }, ...categories].map((c) => (
              <button key={c.slug} onClick={() => setFilter(c.slug)} className={cn("label shrink-0 rounded-full border px-4 py-2.5 transition-colors", filter === c.slug ? "border-signal bg-signal text-accent-foreground" : "border-transparent text-muted-foreground hover:bg-secondary hover:text-foreground")}>
               {c.name} <span className="opacity-60">{c.slug === "all" ? products.length : productsIn(c.slug).length}</span>
@@ -35,7 +35,7 @@ function Shop() {
           ))}
         </div>
       </div>
-      <section className="shell pb-32">
+       <section className="shell pb-24 md:pb-32">
         <div className="grid border-l sm:grid-cols-2 lg:grid-cols-4">
           {list.map((p, i) => <ProductTile key={p.slug} p={p} index={i} />)}
         </div>
