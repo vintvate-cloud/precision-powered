@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
-import { categories, categoryImage, chapters, clients, company, founder, products, productsIn, testimonials, trending } from "@/data/site";
+import { categories, categoryImage, chapters, clients, company, founder, products, productsIn, trending } from "@/data/site";
 import { ButtonLink } from "@/components/site/Button";
 import { DrawLine, loadGsap, MaskLines, prefersReduced, Reveal } from "@/components/site/motion";
 import { TestimonialsCarousel } from "@/components/site/TestimonialsCarousel";
