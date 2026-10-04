@@ -61,7 +61,9 @@ function Hero() {
     const el = root.current;
     if (!el || prefersReduced()) return;
     let ctx: { revert: () => void } | undefined;
+    let cancelled = false;
     loadGsap().then(({ gsap }) => {
+      if (cancelled) return;
       ctx = gsap.context(() => {
         const tl = gsap.timeline({ defaults: { ease: "expo.out" } });
         tl.fromTo("[data-h-grid]", { opacity: 0 }, { opacity: 1, duration: 0.6 })
@@ -74,7 +76,7 @@ function Hero() {
         gsap.to("[data-h-grid]", { yPercent: 6, ease: "none", scrollTrigger: { trigger: el, start: "top top", end: "bottom top", scrub: true } });
       }, el);
     });
-    return () => ctx?.revert();
+    return () => { cancelled = true; ctx?.revert(); };
   }, []);
 
   return (
@@ -368,6 +370,7 @@ function TrendingTrack() {
         </div>
       </div>
     </section>
+    </div>
   );
 }
 
