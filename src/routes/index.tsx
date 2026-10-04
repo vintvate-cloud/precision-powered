@@ -86,7 +86,7 @@ function Hero() {
             <p data-h-label className="label flex items-center gap-3 text-ink-muted md:text-muted-foreground">
               <span className="h-2 w-2 rounded-full bg-signal" /> Bhopal, Madhya Pradesh — Est. {company.established}
             </p>
-            <h1 className="mt-7 font-display text-[clamp(2.25rem,10.8vw,2.7rem)] font-bold uppercase leading-[0.86] md:mt-9 md:text-[8.2vw] md:font-medium lg:text-[5.25vw]">
+            <h1 className="mt-7 font-display text-[clamp(2rem,9.8vw,2.45rem)] font-bold uppercase leading-[0.88] md:mt-9 md:text-[8.2vw] md:font-medium lg:text-[5.25vw]">
               {["Engineering", "the electric", "road ahead"].map((line, index) => (
                 <span key={line} className="block overflow-hidden"><span data-h-line className={cn("block", index === 2 && "relative inline-block after:absolute after:-right-5 after:top-2 after:h-3 after:w-3 after:rounded-full after:bg-signal md:after:h-4 md:after:w-4")}>{line}</span></span>
               ))}
