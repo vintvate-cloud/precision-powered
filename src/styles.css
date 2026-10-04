@@ -81,7 +81,7 @@
   .shell { @apply mx-auto w-full max-w-[1600px] px-5 md:px-10 lg:px-14; }
   .grid-12 { @apply grid grid-cols-4 gap-x-4 md:grid-cols-8 md:gap-x-6 lg:grid-cols-12; }
   .label { @apply font-mono text-[11px] uppercase tracking-[0.18em]; }
-  .display-xl { @apply font-display font-semibold uppercase leading-[0.86] tracking-[-0.045em] text-[17vw] md:text-[11vw] lg:text-[9.2vw]; }
+  .display-xl { @apply font-display font-semibold uppercase leading-[0.86] tracking-[-0.045em] text-[17vw] md:text-[11vw] lg:text-[7.4vw]; }
   .display-l { @apply font-display font-semibold leading-[0.92] tracking-[-0.04em] text-5xl md:text-7xl lg:text-8xl; }
   .display-m { @apply font-display font-semibold leading-[0.98] tracking-[-0.03em] text-4xl md:text-5xl lg:text-6xl; }
   .link-line {
