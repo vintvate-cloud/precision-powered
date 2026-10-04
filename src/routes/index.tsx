@@ -81,15 +81,15 @@ function Hero() {
 
   return (
     <section ref={root} className="shell pb-5 pt-24 md:pb-8 md:pt-28">
-      <div className="reference-grid relative isolate min-h-[calc(100svh-7rem)] overflow-hidden rounded-[24px] border bg-card shadow-sm">
+      <div className="reference-grid relative isolate h-[720px] overflow-hidden rounded-[24px] border bg-card shadow-sm md:h-[760px] lg:aspect-[16/9] lg:h-auto lg:max-h-[820px] lg:min-h-[660px]">
         <div data-h-grid className="pointer-events-none absolute inset-0" aria-hidden />
 
-        <div className="relative z-10 grid gap-8 px-5 pb-[48vw] pt-10 md:px-8 md:pb-[36vw] md:pt-14 lg:grid-cols-12 lg:px-10 lg:pb-[23vw] lg:pt-20">
+        <div className="relative z-10 grid gap-6 px-5 pt-10 md:px-8 md:pt-14 lg:grid-cols-12 lg:px-10 lg:pt-16">
           <div className="lg:col-span-7">
             <p data-h-label className="label flex items-center gap-3 text-muted-foreground">
               <span className="h-2 w-2 rounded-full bg-signal" /> Bhopal, Madhya Pradesh — Est. {company.established}
             </p>
-            <h1 className="mt-10 font-display text-[12vw] font-medium uppercase leading-[0.88] md:text-[8.2vw] lg:text-[5.25vw]">
+            <h1 className="mt-9 font-display text-[12vw] font-medium uppercase leading-[0.88] md:text-[8.2vw] lg:text-[5.25vw]">
               {["Engineering", "the electric", "road ahead"].map((line, index) => (
                 <span key={line} className="block overflow-hidden"><span data-h-line className={cn("block", index === 2 && "relative inline-block after:absolute after:-right-5 after:top-2 after:h-3 after:w-3 after:rounded-full after:bg-signal md:after:h-4 md:after:w-4")}>{line}</span></span>
               ))}
@@ -97,17 +97,17 @@ function Hero() {
           </div>
 
           <div data-h-panel className="lg:col-span-5 lg:pt-4">
-            <div className="rounded-[20px] bg-background/92 p-5 shadow-sm backdrop-blur-sm md:p-7">
+            <div className="rounded-[20px] bg-background/92 p-4 shadow-sm backdrop-blur-sm md:p-7">
               <p className="label text-muted-foreground">EV systems / product range</p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {["PMSM motors", "Controllers", "Battery packs", "Drivetrains"].map((item, index) => (
                   <span key={item} className={cn("rounded-full px-3 py-2 text-xs", index === 1 ? "bg-signal" : "bg-secondary")}>{item}</span>
                 ))}
               </div>
-              <div className="mt-7 grid grid-cols-[minmax(0,1fr)_8rem] items-end gap-5">
+              <div className="mt-6 grid grid-cols-[minmax(0,1fr)_7rem] items-end gap-4 md:mt-7 md:grid-cols-[minmax(0,1fr)_8rem] md:gap-5">
                 <div className="min-w-0">
-                  <p className="font-display text-2xl font-semibold leading-tight md:text-3xl">High-performance components for electric mobility.</p>
-                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">Motors, controllers and EV conversion systems engineered for real-world use.</p>
+                  <p className="font-display text-xl font-semibold leading-tight md:text-3xl">High-performance components for electric mobility.</p>
+                  <p className="mt-4 hidden text-sm leading-relaxed text-muted-foreground md:block">Motors, controllers and EV conversion systems engineered for real-world use.</p>
                 </div>
                 <div className="product-plate aspect-square overflow-hidden">
                   <img src={heroImg} alt="45kW Liquid Cooled Motor and Controller" className="h-full w-full object-contain p-2 mix-blend-multiply" />
@@ -117,12 +117,12 @@ function Hero() {
           </div>
         </div>
 
-        <div className="absolute inset-x-0 bottom-0 h-[43vw] max-h-[430px] min-h-[250px] bg-signal md:h-[34vw] lg:h-[24vw]" />
-        <div data-h-img className="absolute bottom-0 left-1/2 z-20 h-[44vw] min-h-[250px] w-[86vw] -translate-x-1/2 md:h-[36vw] md:w-[72vw] lg:h-[29vw] lg:w-[60vw]">
+        <div className="absolute inset-x-0 bottom-0 h-[250px] bg-signal md:h-[290px] lg:h-[38%]" />
+        <div data-h-img className="absolute bottom-0 left-1/2 z-20 h-[260px] w-[86vw] -translate-x-1/2 md:h-[310px] md:w-[72vw] lg:h-[48%] lg:w-[60vw]">
           <img src={heroImg} alt="45kW Liquid Cooled Motor and Controller" fetchPriority="high" className="h-full w-full object-contain object-bottom mix-blend-multiply drop-shadow-2xl" />
         </div>
 
-        <div data-h-panel className="absolute bottom-[19vw] left-5 z-30 hidden rounded-[18px] bg-foreground/80 p-5 text-background backdrop-blur-md md:block lg:bottom-[11vw] lg:left-10">
+        <div data-h-panel className="absolute bottom-24 left-5 z-30 hidden rounded-[18px] bg-foreground/80 p-5 text-background backdrop-blur-md md:block lg:bottom-20 lg:left-10">
           <p className="font-display text-3xl font-semibold">{company.clients}</p>
           <p className="mt-1 max-w-36 text-xs text-background/70">clients nationwide</p>
         </div>
